@@ -1,0 +1,1227 @@
+fileFormatVersion: 2
+guid: 589ac4952536f2c4683d415c9c36c128
+timeCreated: 1464419490
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Player_shooting_0
+    21300002: Player_shooting_1
+    21300004: Player_shooting_2
+    21300006: Player_shooting_3
+    21300008: Player_shooting_4
+    21300010: Player_shooting_5
+    21300012: Player_shooting_6
+    21300014: Player_shooting_7
+    21300016: Player_shooting_8
+    21300018: Player_shooting_9
+    21300020: Player_shooting_10
+    21300022: Player_shooting_11
+    21300024: Player_shooting_12
+    21300026: Player_shooting_13
+    21300028: Player_shooting_14
+    21300030: Player_shooting_15
+    21300032: Player_shooting_16
+    21300034: Player_shooting_17
+    21300036: Player_shooting_idle_0
+    21300038: Player_shooting_idle_1
+    21300040: Player_shooting_idle_2
+    21300042: Player_shooting_idle_3
+    21300044: Player_shooting_idle_4
+    21300046: Player_shooting_idle_5
+    21300048: Player_shooting_running_0
+    21300050: Player_shooting_running_1
+    21300052: Player_shooting_running_2
+    21300054: Player_shooting_running_3
+    21300056: Player_shooting_running_4
+    21300058: Player_shooting_running_5
+    21300060: Player_shooting_30
+    21300062: Player_shooting_31
+    21300064: Player_shooting_32
+    21300066: Player_shooting_33
+    21300068: Player_shooting_34
+    21300070: Player_shooting_35
+    21300072: Player_shooting_air_0
+    21300074: Player_shooting_air_1
+    21300076: Player_shooting_air_2
+    21300078: Player_shooting_39
+    21300080: Player_shooting_40
+    21300082: Player_shooting_41
+    21300084: Player_shooting_42
+    21300086: Player_shooting_43
+    21300088: Player_shooting_44
+    21300090: Player_shooting_45
+    21300092: Player_shooting_46
+    21300094: Player_shooting_47
+    21300096: Player_shooting_48
+    21300098: Player_shooting_49
+    21300100: Player_shooting_50
+    21300102: Player_shooting_51
+    21300104: Player_shooting_52
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Player_shooting_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 16}
+        - {x: -30, y: 5}
+        - {x: -30, y: -4}
+        - {x: -27, y: -16}
+        - {x: -3, y: -16}
+        - {x: 0, y: -7}
+        - {x: 0, y: 16}
+    - name: Player_shooting_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 16}
+        - {x: -30, y: 5}
+        - {x: -30, y: -4}
+        - {x: -27, y: -16}
+        - {x: -10, y: -16}
+        - {x: 0, y: -9}
+        - {x: 0, y: 16}
+    - name: Player_shooting_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 14}
+        - {x: -30, y: 7}
+        - {x: -30, y: -8}
+        - {x: -26, y: -16}
+        - {x: -10, y: -16}
+        - {x: 0, y: -9}
+        - {x: 0, y: 5}
+        - {x: -7, y: 14}
+      - - {x: -7, y: 16}
+        - {x: -7, y: 8}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: 0, y: 7}
+        - {x: 0, y: 14}
+        - {x: -1, y: 16}
+    - name: Player_shooting_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 15}
+        - {x: -30, y: 5}
+        - {x: -30, y: -4}
+        - {x: -27, y: -16}
+        - {x: -10, y: -16}
+        - {x: 0, y: -9}
+        - {x: 0, y: 5}
+        - {x: -8, y: 15}
+      - - {x: -2, y: 6}
+        - {x: 1, y: 7}
+        - {x: 1, y: 16}
+        - {x: -6, y: 16}
+        - {x: -6, y: 8}
+    - name: Player_shooting_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 15}
+        - {x: -30, y: 13}
+        - {x: -30, y: -12}
+        - {x: -29, y: -16}
+        - {x: -9, y: -16}
+        - {x: 0, y: -4}
+        - {x: 0, y: 11}
+        - {x: -1, y: 15}
+      - - {x: -6, y: -16}
+        - {x: -3, y: -15}
+        - {x: -3, y: -12}
+        - {x: -6, y: -11}
+        - {x: -8, y: -13}
+    - name: Player_shooting_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 16}
+        - {x: -30, y: 5}
+        - {x: -30, y: -4}
+        - {x: -27, y: -16}
+        - {x: -10, y: -16}
+        - {x: 0, y: -9}
+        - {x: 0, y: 16}
+    - name: Player_shooting_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27, y: 16}
+        - {x: -31, y: 5}
+        - {x: -31, y: -7}
+        - {x: -27, y: -7}
+        - {x: -25, y: -5}
+        - {x: -25, y: -2}
+        - {x: -25, y: -16}
+        - {x: -12, y: -16}
+        - {x: 0, y: -6}
+        - {x: 0, y: 16}
+    - name: Player_shooting_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 16}
+        - {x: -30, y: 5}
+        - {x: -30, y: -6}
+        - {x: -28, y: -16}
+        - {x: -6, y: -16}
+        - {x: 0, y: -5}
+        - {x: 0, y: 16}
+    - name: Player_shooting_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 14}
+        - {x: -29, y: 4}
+        - {x: -29, y: -4}
+        - {x: -21, y: -16}
+        - {x: -12, y: -16}
+        - {x: 0, y: -8}
+        - {x: 0, y: 2}
+        - {x: -9, y: 14}
+      - - {x: -7, y: 16}
+        - {x: -7, y: 8}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: 0, y: 7}
+        - {x: 0, y: 14}
+        - {x: -1, y: 16}
+    - name: Player_shooting_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 15}
+        - {x: -23, y: 12}
+        - {x: -29, y: 4}
+        - {x: -29, y: -16}
+        - {x: -5, y: -16}
+        - {x: 0, y: -10}
+        - {x: 0, y: 3}
+        - {x: -10, y: 15}
+      - - {x: -2, y: 6}
+        - {x: 1, y: 7}
+        - {x: 1, y: 16}
+        - {x: -6, y: 16}
+        - {x: -6, y: 8}
+    - name: Player_shooting_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 15}
+        - {x: -29, y: 4}
+        - {x: -29, y: -15}
+        - {x: -26, y: -16}
+        - {x: -8, y: -16}
+        - {x: -4, y: -12}
+        - {x: 0, y: -5}
+        - {x: 0, y: 13}
+        - {x: -2, y: 15}
+      - - {x: -6, y: -16}
+        - {x: -3, y: -15}
+        - {x: -3, y: -12}
+        - {x: -6, y: -11}
+        - {x: -8, y: -13}
+    - name: Player_shooting_11
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 224
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 16}
+        - {x: -7, y: 14}
+        - {x: -7, y: 6}
+        - {x: -14, y: 16}
+        - {x: -25, y: 14}
+        - {x: -30, y: 4}
+        - {x: -30, y: -7}
+        - {x: -21, y: -16}
+        - {x: -13, y: -16}
+        - {x: 0, y: -7}
+        - {x: 0, y: 16}
+    - name: Player_shooting_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -31, y: 0}
+        - {x: -31, y: -9}
+        - {x: -24, y: -16}
+        - {x: -11, y: -16}
+        - {x: -7, y: -15}
+        - {x: 1, y: -8}
+        - {x: 1, y: 13}
+        - {x: 0, y: 16}
+    - name: Player_shooting_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 11}
+        - {x: -27, y: 5}
+        - {x: -27, y: -8}
+        - {x: -23, y: -16}
+        - {x: -13, y: -16}
+        - {x: 1, y: -9}
+        - {x: 1, y: 1}
+        - {x: -8, y: 11}
+      - - {x: -6, y: 16}
+        - {x: -8, y: 14}
+        - {x: -8, y: 5}
+        - {x: -7, y: 2}
+        - {x: -4, y: 2}
+        - {x: 0, y: 6}
+        - {x: 0, y: 14}
+        - {x: -1, y: 16}
+    - name: Player_shooting_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 15}
+        - {x: -22, y: 15}
+        - {x: -34, y: 9}
+        - {x: -49, y: -13}
+        - {x: -49, y: -16}
+        - {x: -10, y: -16}
+        - {x: -2, y: -12}
+        - {x: -2, y: 0}
+      - - {x: -7, y: 16}
+        - {x: -7, y: 8}
+        - {x: -6, y: 5}
+        - {x: -4, y: 5}
+        - {x: 0, y: 7}
+        - {x: 0, y: 14}
+        - {x: -1, y: 16}
+    - name: Player_shooting_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: -9}
+        - {x: -2, y: -7}
+        - {x: -2, y: 0}
+        - {x: -8, y: 15}
+        - {x: -24, y: 15}
+        - {x: -55, y: -3}
+        - {x: -55, y: -15}
+        - {x: -54, y: -16}
+        - {x: -10, y: -16}
+        - {x: -6, y: -14}
+        - {x: -7, y: -12}
+        - {x: -11, y: -9}
+      - - {x: -2, y: 6}
+        - {x: 1, y: 7}
+        - {x: 1, y: 16}
+        - {x: -6, y: 16}
+        - {x: -6, y: 8}
+    - name: Player_shooting_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 11}
+        - {x: -1, y: 15}
+        - {x: -21, y: 15}
+        - {x: -29, y: 6}
+        - {x: -60, y: -9}
+        - {x: -60, y: -14}
+        - {x: -59, y: -16}
+        - {x: -9, y: -16}
+        - {x: -9, y: -14}
+        - {x: -2, y: -7}
+        - {x: 0, y: -4}
+      - - {x: -6, y: -16}
+        - {x: -3, y: -15}
+        - {x: -3, y: -12}
+        - {x: -6, y: -11}
+        - {x: -8, y: -13}
+      - - {x: -35, y: -7}
+        - {x: -32, y: -6}
+        - {x: -32, y: -3}
+        - {x: -35, y: -2}
+        - {x: -37, y: -4}
+    - name: Player_shooting_17
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 192
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 16}
+        - {x: -17, y: 14}
+        - {x: -23, y: 9}
+        - {x: -62, y: -8}
+        - {x: -62, y: -16}
+        - {x: -7, y: -16}
+        - {x: 0, y: -8}
+        - {x: 0, y: 16}
+    - name: Player_shooting_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 81.12146, y: -7}
+        - {x: 81.12146, y: 7}
+        - {x: 47.12146, y: 16}
+        - {x: -1.87854, y: 16}
+        - {x: -9.87854, y: 12}
+        - {x: -9.87854, y: -16}
+        - {x: 40.12146, y: -16}
+    - name: Player_shooting_idle_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.87854, y: 16.000015}
+        - {x: -10.87854, y: 10.000015}
+        - {x: -10.87854, y: -15.999985}
+        - {x: 14.12146, y: -15.999985}
+        - {x: 17.12146, y: -14.999985}
+        - {x: 19.12146, y: -9.999985}
+        - {x: 19.12146, y: 16.000015}
+    - name: Player_shooting_idle_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.87854, y: 16.000015}
+        - {x: -11.87854, y: 8.000015}
+        - {x: -11.87854, y: -3.9999847}
+        - {x: -9.87854, y: -15.999985}
+        - {x: 8.12146, y: -15.999985}
+        - {x: 8.12146, y: 14.000015}
+        - {x: 5.12146, y: 16.000015}
+      - - {x: 10.12146, y: 16.000015}
+        - {x: 10.12146, y: 3.0000153}
+        - {x: 12.12146, y: -5.9999847}
+        - {x: 14.12146, y: -6.9999847}
+        - {x: 18.12146, y: -5.9999847}
+        - {x: 18.12146, y: 14.000015}
+        - {x: 15.12146, y: 16.000015}
+    - name: Player_shooting_idle_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2.87854, y: 15.000015}
+        - {x: -16.87854, y: 5.0000153}
+        - {x: -16.87854, y: -15.999985}
+        - {x: 6.12146, y: -15.999985}
+        - {x: 10.12146, y: -0.99998474}
+        - {x: 10.12146, y: 13.000015}
+        - {x: 6.12146, y: 15.000015}
+      - - {x: 12.12146, y: -2.9999847}
+        - {x: 14.12146, y: -4.9999847}
+        - {x: 17.12146, y: -3.9999847}
+        - {x: 17.12146, y: 5.0000153}
+        - {x: 15.12146, y: 7.0000153}
+        - {x: 12.12146, y: 6.0000153}
+    - name: Player_shooting_idle_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.87854, y: 14.000015}
+        - {x: -10.87854, y: 5.0000153}
+        - {x: -10.87854, y: 0.000015258789}
+        - {x: -9.87854, y: -15.999985}
+        - {x: 11.12146, y: -15.999985}
+        - {x: 18.12146, y: -5.9999847}
+        - {x: 18.12146, y: 10.000015}
+        - {x: 4.12146, y: 14.000015}
+    - name: Player_shooting_idle_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 160
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.12146, y: 13.000015}
+        - {x: -3.87854, y: 13.000015}
+        - {x: -9.87854, y: 3.0000153}
+        - {x: -9.87854, y: -15.999985}
+        - {x: 10.12146, y: -15.999985}
+        - {x: 19.12146, y: -4.9999847}
+        - {x: 19.12146, y: 5.0000153}
+        - {x: 18.12146, y: 8.000015}
+    - name: Player_shooting_running_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 128
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1.12146, y: 16.000015}
+        - {x: -3.87854, y: 15.000015}
+        - {x: -12.87854, y: 5.0000153}
+        - {x: -14.87854, y: 0.000015258789}
+        - {x: -14.87854, y: -9.999985}
+        - {x: -10.87854, y: -15.999985}
+        - {x: 43.12146, y: -15.999985}
+        - {x: 81.12146, y: -7.9999847}
+        - {x: 81.12146, y: 6.0000153}
+        - {x: 28.12146, y: 16.000015}
+    - name: Player_shooting_running_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 127
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.87854, y: -16}
+        - {x: 19.12146, y: -16}
+        - {x: 19.12146, y: 16}
+        - {x: -4.87854, y: 16}
+        - {x: -12.87854, y: 9}
+    - name: Player_shooting_running_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.87854, y: 16.000015}
+        - {x: -11.87854, y: 15.000015}
+        - {x: -11.87854, y: -13.999985}
+        - {x: -6.87854, y: -15.999985}
+        - {x: 8.12146, y: -15.999985}
+        - {x: 8.12146, y: 15.000015}
+        - {x: 7.12146, y: 16.000015}
+      - - {x: 10.12146, y: 16.000015}
+        - {x: 10.12146, y: -0.99998474}
+        - {x: 13.12146, y: -6.9999847}
+        - {x: 15.12146, y: -6.9999847}
+        - {x: 17.12146, y: -5.9999847}
+        - {x: 18.12146, y: -2.9999847}
+        - {x: 18.12146, y: 11.000015}
+        - {x: 16.12146, y: 16.000015}
+    - name: Player_shooting_running_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.49999952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.12146, y: 14.000015}
+        - {x: 5.12146, y: 14.000015}
+        - {x: -0.87854004, y: 15.000015}
+        - {x: -6.87854, y: 15.000015}
+        - {x: -13.87854, y: 5.0000153}
+        - {x: -13.87854, y: -7.9999847}
+        - {x: -12.87854, y: -15.999985}
+        - {x: 9.12146, y: -15.999985}
+        - {x: 10.12146, y: -14.999985}
+        - {x: 10.12146, y: 12.000015}
+      - - {x: 11.12146, y: 16.000015}
+        - {x: 11.12146, y: -3.9999847}
+        - {x: 14.12146, y: -4.9999847}
+        - {x: 18.12146, y: -3.9999847}
+        - {x: 18.12146, y: 16.000015}
+    - name: Player_shooting_running_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.51659346}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0.12145996, y: 14.469009}
+        - {x: -7.87854, y: 14.469009}
+        - {x: -13.87854, y: 6.4690094}
+        - {x: -13.87854, y: -15.530991}
+        - {x: -11.87854, y: -16.53099}
+        - {x: 11.12146, y: -16.53099}
+        - {x: 17.12146, y: -5.5309906}
+        - {x: 17.12146, y: 5.4690094}
+        - {x: 15.12146, y: 7.4690094}
+    - name: Player_shooting_running_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.4834051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.12146, y: -0.46896362}
+        - {x: 16.12146, y: 3.5310364}
+        - {x: 4.12146, y: 15.531036}
+        - {x: -5.87854, y: 15.531036}
+        - {x: -12.87854, y: 5.5310364}
+        - {x: -12.87854, y: -1.4689636}
+        - {x: -6.87854, y: -12.468964}
+        - {x: -4.87854, y: -15.468964}
+        - {x: 2.12146, y: -15.468964}
+        - {x: 5.12146, y: -11.468964}
+        - {x: 17.12146, y: -3.4689636}
+    - name: Player_shooting_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -8, y: 14}
+        - {x: -24, y: 14}
+        - {x: -29, y: 8}
+        - {x: -29, y: -5}
+        - {x: -24, y: -16}
+        - {x: -12, y: -16}
+        - {x: -1, y: -5}
+        - {x: 1, y: -2}
+        - {x: 1, y: 9}
+    - name: Player_shooting_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 13}
+        - {x: -32, y: 7}
+        - {x: -32, y: -10}
+        - {x: -24, y: -16}
+        - {x: -3, y: -16}
+        - {x: 0, y: -12}
+        - {x: 0, y: 5}
+        - {x: -4, y: 13}
+    - name: Player_shooting_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 14}
+        - {x: -30, y: 6}
+        - {x: -31, y: 4}
+        - {x: -31, y: -2}
+        - {x: -22, y: -16}
+        - {x: -6, y: -16}
+        - {x: 0, y: -9}
+        - {x: 0, y: 3}
+        - {x: -6, y: 14}
+    - name: Player_shooting_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 8}
+        - {x: -26, y: 0}
+        - {x: -26, y: -16}
+        - {x: -7, y: -16}
+        - {x: -3, y: -9}
+        - {x: -3, y: 5}
+        - {x: -4, y: 8}
+    - name: Player_shooting_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 10}
+        - {x: -25, y: 2}
+        - {x: -26, y: -7}
+        - {x: -26, y: -16}
+        - {x: -2, y: -16}
+        - {x: 3, y: 1}
+        - {x: 3, y: 10}
+    - name: Player_shooting_35
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 96
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 1}
+        - {x: -9, y: 11}
+        - {x: -22, y: 11}
+        - {x: -25, y: 5}
+        - {x: -25, y: -15}
+        - {x: -23, y: -16}
+        - {x: -9, y: -16}
+        - {x: -7, y: -14}
+        - {x: 1, y: -8}
+        - {x: 3, y: -4}
+    - name: Player_shooting_air_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.87854, y: 16}
+        - {x: -11.87854, y: 13}
+        - {x: -11.87854, y: -6}
+        - {x: -6.87854, y: -16}
+        - {x: 41.12146, y: -16}
+        - {x: 81.12146, y: -7}
+        - {x: 81.12146, y: 15}
+        - {x: 71.12146, y: 16}
+    - name: Player_shooting_air_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.12146, y: 16}
+        - {x: -14.87854, y: 7}
+        - {x: -14.87854, y: -4}
+        - {x: -13.87854, y: -7}
+        - {x: -4.87854, y: -16}
+        - {x: 7.12146, y: -16}
+        - {x: 17.12146, y: -9}
+        - {x: 19.12146, y: -2}
+        - {x: 19.12146, y: 9}
+        - {x: 17.12146, y: 16}
+    - name: Player_shooting_air_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 128
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3662386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.87854, y: 14}
+        - {x: -13.87854, y: 4}
+        - {x: -13.87854, y: -5}
+        - {x: -5.87854, y: -16}
+        - {x: 10.12146, y: -16}
+        - {x: 18.12146, y: -7}
+        - {x: 18.12146, y: 8}
+        - {x: 11.12146, y: 14}
+    - name: Player_shooting_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 14}
+        - {x: -28, y: 14}
+        - {x: -31, y: 13}
+        - {x: -31, y: -16}
+        - {x: -9, y: -16}
+        - {x: 0, y: -5}
+        - {x: 0, y: 4}
+        - {x: -9, y: 11}
+    - name: Player_shooting_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 14}
+        - {x: -30, y: -16}
+        - {x: -7, y: -16}
+        - {x: 0, y: -11}
+        - {x: 0, y: 3}
+        - {x: -11, y: 14}
+    - name: Player_shooting_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 13}
+        - {x: -31, y: -16}
+        - {x: -6, y: -16}
+        - {x: 0, y: -9}
+        - {x: 0, y: 7}
+        - {x: -8, y: 13}
+    - name: Player_shooting_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: -1}
+        - {x: -10, y: 10}
+        - {x: -21, y: 10}
+        - {x: -31, y: 0}
+        - {x: -31, y: -8}
+        - {x: -22, y: -16}
+        - {x: -14, y: -16}
+        - {x: -11, y: -12}
+        - {x: -1, y: -9}
+        - {x: 1, y: -6}
+    - name: Player_shooting_43
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 11}
+        - {x: -27, y: 5}
+        - {x: -27, y: -8}
+        - {x: -23, y: -16}
+        - {x: -13, y: -16}
+        - {x: 1, y: -9}
+        - {x: 1, y: 1}
+        - {x: -8, y: 11}
+    - name: Player_shooting_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 15}
+        - {x: -29, y: 9}
+        - {x: -29, y: -16}
+        - {x: -7, y: -16}
+        - {x: -2, y: -9}
+        - {x: -2, y: 3}
+        - {x: -13, y: 15}
+    - name: Player_shooting_45
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: -9}
+        - {x: -2, y: -7}
+        - {x: -2, y: -1}
+        - {x: -12, y: 15}
+        - {x: -21, y: 15}
+        - {x: -31, y: 3}
+        - {x: -31, y: -4}
+        - {x: -28, y: -7}
+        - {x: -27, y: -7}
+        - {x: -25, y: -5}
+        - {x: -25, y: -2}
+        - {x: -25, y: -4}
+        - {x: -24, y: -8}
+        - {x: -31, y: -15}
+        - {x: -31, y: -16}
+        - {x: -8, y: -16}
+        - {x: -6, y: -14}
+        - {x: -7, y: -12}
+        - {x: -11, y: -9}
+    - name: Player_shooting_46
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 15}
+        - {x: -30, y: 4}
+        - {x: -30, y: -6}
+        - {x: -28, y: -16}
+        - {x: -6, y: -16}
+        - {x: 0, y: -10}
+        - {x: 0, y: 2}
+        - {x: -10, y: 15}
+    - name: Player_shooting_47
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 32
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 14}
+        - {x: -29, y: 4}
+        - {x: -29, y: -6}
+        - {x: -21, y: -16}
+        - {x: -13, y: -16}
+        - {x: 0, y: -7}
+        - {x: 0, y: 2}
+        - {x: -7, y: 14}
+    - name: Player_shooting_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 14}
+        - {x: -28, y: 14}
+        - {x: -31, y: 13}
+        - {x: -31, y: -16}
+        - {x: -16, y: -16}
+        - {x: -6, y: -10}
+        - {x: -6, y: 4}
+    - name: Player_shooting_49
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 14}
+        - {x: -31, y: -16}
+        - {x: -15, y: -16}
+        - {x: -10, y: -14}
+        - {x: -10, y: 1}
+        - {x: -18, y: 14}
+    - name: Player_shooting_50
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 13}
+        - {x: -31, y: 12}
+        - {x: -31, y: -10}
+        - {x: -30, y: -16}
+        - {x: -19, y: -16}
+        - {x: -13, y: -9}
+        - {x: -13, y: 5}
+        - {x: -17, y: 13}
+    - name: Player_shooting_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 13}
+        - {x: -31, y: 11}
+        - {x: -32, y: 10}
+        - {x: -32, y: -14}
+        - {x: -31, y: -16}
+        - {x: -20, y: -16}
+        - {x: -14, y: -3}
+        - {x: -14, y: 9}
+        - {x: -18, y: 13}
+    - name: Player_shooting_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 13}
+        - {x: -32, y: 7}
+        - {x: -32, y: -9}
+        - {x: -29, y: -16}
+        - {x: -20, y: -16}
+        - {x: -14, y: -3}
+        - {x: -14, y: 8}
+        - {x: -20, y: 13}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
