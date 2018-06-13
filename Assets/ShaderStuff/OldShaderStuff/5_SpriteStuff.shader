@@ -1,4 +1,7 @@
-﻿Shader"Custom/5_SpriteStuff"
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
+Shader"Custom/5_SpriteStuff"
 {
 	Properties{
 		_Color("Main Color", Color) = (1,1,1,1)
@@ -32,10 +35,10 @@
 
 		void vert(inout appdata_full v) {
 			float phase = _Time * 20.0;
-			float4 wpos = mul(_Object2World, v.vertex);
+			float4 wpos = mul(unity_ObjectToWorld, v.vertex);
 			float offset = (wpos.x + (wpos.z * 0.2)) * 0.5;
 			wpos.y = sin(phase + offset) * 0.2;
-			v.vertex = mul(_World2Object, wpos);
+			v.vertex = mul(unity_WorldToObject, wpos);
 		}
 
 		void surf(Input IN, inout SurfaceOutput o)

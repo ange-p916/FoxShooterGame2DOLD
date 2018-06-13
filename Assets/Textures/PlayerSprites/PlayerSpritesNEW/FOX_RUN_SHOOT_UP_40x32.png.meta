@@ -8,12 +8,12 @@ TextureImporter:
     21300002: FOX_RUN_SHOOT_UP_40x32_1
     21300004: FOX_RUN_SHOOT_UP_40x32_2
     21300006: FOX_RUN_SHOOT_UP_40x32_3
-  serializedVersion: 2
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -25,10 +25,8 @@ TextureImporter:
     normalMapFilter: 0
   isReadable: 1
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 8192
@@ -39,9 +37,7 @@ TextureImporter:
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
-  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
@@ -49,12 +45,28 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
+  alphaUsage: 1
   alphaIsTransparency: 1
-  textureType: 5
-  buildTargetSettings: []
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: FOX_RUN_SHOOT_UP_40x32_0
+    - serializedVersion: 2
+      name: FOX_RUN_SHOOT_UP_40x32_0
       rect:
         serializedVersion: 2
         x: 0
@@ -64,16 +76,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 16}
-        - {x: -20, y: 9}
-        - {x: -20, y: -9}
-        - {x: -17, y: -16}
-        - {x: 9, y: -16}
-        - {x: 12, y: -13}
-        - {x: 13, y: 8}
-        - {x: 13, y: 16}
-    - name: FOX_RUN_SHOOT_UP_40x32_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FOX_RUN_SHOOT_UP_40x32_1
       rect:
         serializedVersion: 2
         x: 40
@@ -83,14 +89,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -7, y: 16}
-        - {x: -20, y: 7}
-        - {x: -20, y: -7}
-        - {x: -11, y: -16}
-        - {x: 13, y: -16}
-        - {x: 13, y: 16}
-    - name: FOX_RUN_SHOOT_UP_40x32_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FOX_RUN_SHOOT_UP_40x32_2
       rect:
         serializedVersion: 2
         x: 80
@@ -100,17 +102,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 1, y: 16}
-        - {x: -18, y: 5}
-        - {x: -20, y: 1}
-        - {x: -20, y: -9}
-        - {x: -9, y: -16}
-        - {x: 5, y: -16}
-        - {x: 13, y: -2}
-        - {x: 13, y: 14}
-        - {x: 12, y: 16}
-    - name: FOX_RUN_SHOOT_UP_40x32_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FOX_RUN_SHOOT_UP_40x32_3
       rect:
         serializedVersion: 2
         x: 120
@@ -120,13 +115,8 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -14, y: 16}
-        - {x: -20, y: 12}
-        - {x: -20, y: -9}
-        - {x: -16, y: -16}
-        - {x: 13, y: -16}
-        - {x: 13, y: 16}
+      outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
