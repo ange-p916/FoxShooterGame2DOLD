@@ -1,4 +1,6 @@
-﻿Shader "Custom/MySpriteShader"{
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/MySpriteShader"{
 	Properties
 	{
 		_Color ("Color", Color) = (1,1,1,1)
@@ -53,7 +55,7 @@
 				{
 					vertOutput o;
 					o.worldPos = input.pos;
-					o.pos = mul(UNITY_MATRIX_MVP, o.worldPos);
+					o.pos = UnityObjectToClipPos(o.worldPos);
 					o.texcoord = input.texcoord;
 					o.color = input.color * _Color;
 

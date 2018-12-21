@@ -1,4 +1,6 @@
-﻿Shader "Custom/4_SpriteStuff"{
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/4_SpriteStuff"{
 	Properties{
 
 	}
@@ -26,7 +28,7 @@
 		v2f vert(appdata v)
 		{
 			v2f o;
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 			float3 bitangent = cross(v.normal, v.tangent.xyz) * v.tangent.w;
 			o.color.xyz = bitangent * 0.5 + 0.5;
 			o.color.w = 1.0;

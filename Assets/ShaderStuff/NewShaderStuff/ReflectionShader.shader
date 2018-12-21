@@ -1,4 +1,6 @@
-﻿Shader "Custom/ReflectionShader" 
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/ReflectionShader" 
 {
 	Properties 
 	{
@@ -42,7 +44,7 @@
 		v2f vert(appdata_t i)
 		{
 			v2f o;
-			o.pos = mul(UNITY_MATRIX_MVP, i.pos);
+			o.pos = UnityObjectToClipPos(i.pos);
 			o.uv = TRANSFORM_TEX(i.uv, _MainTex);
 			o.col = i.col * _Color;
 			o.refl = ComputeScreenPos(o.pos);

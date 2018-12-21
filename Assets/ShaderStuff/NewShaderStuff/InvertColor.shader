@@ -1,4 +1,6 @@
-﻿Shader "Custom/InvertColor" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/InvertColor" {
 	Properties
 	{
 		_Color("Tint Color", Color) = (1,1,1,1)
@@ -39,7 +41,7 @@
 	fragmentInput vert(vertexInput i)
 	{
 		fragmentInput o;
-		o.pos = mul(UNITY_MATRIX_MVP, i.vertex);
+		o.pos = UnityObjectToClipPos(i.vertex);
 		o.color = _Color;
 		return o;
 	}

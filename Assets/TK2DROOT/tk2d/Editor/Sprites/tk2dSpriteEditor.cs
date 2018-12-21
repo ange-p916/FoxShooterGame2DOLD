@@ -305,7 +305,7 @@ class tk2dSpriteEditor : Editor
 			{
 				if (PrefabUtility.GetPrefabType(spr) == PrefabType.PrefabInstance)
 				{
-					Object parent = PrefabUtility.GetPrefabParent(spr.gameObject);
+					Object parent = PrefabUtility.GetCorrespondingObjectFromSource(spr.gameObject);
 					bool found = false;
 					foreach (tk2dBaseSprite sprite in targetSprites) {
 						if (sprite.gameObject == parent) {
@@ -420,13 +420,17 @@ class tk2dSpriteEditor : Editor
 				if (boxCollider != null) {
 					DestroyImmediate(boxCollider);
 				}
+#if !STRIP_PHYSICS_3D
 				sprite.boxCollider = null;
+#endif
 #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)
+#if !STRIP_PHYSICS_2D
 				var boxCollider2D = sprite.GetComponent<BoxCollider2D>();
 				if (boxCollider2D != null) {
 					DestroyImmediate(boxCollider2D);
 				}
 				sprite.boxCollider2D = null;
+#endif
 #endif
 			}
 		}

@@ -1,4 +1,6 @@
-﻿Shader "Custom/Splatter/Surface" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/Splatter/Surface" {
 	Properties{
 		[PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 		_Color("Tint", Color) = (1,1,1,1)
@@ -52,7 +54,7 @@
 		v2f vert(appdata_t i)
 		{
 			v2f o;
-			o.vertex = mul(UNITY_MATRIX_MVP, i.vertex);
+			o.vertex = UnityObjectToClipPos(i.vertex);
 			o.texcoord = i.texcoord;
 			o.color = i.color * _Color;
 #ifdef PIXELSNAP_ON

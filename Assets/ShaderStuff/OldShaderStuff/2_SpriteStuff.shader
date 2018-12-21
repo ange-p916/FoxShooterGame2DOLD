@@ -1,4 +1,6 @@
-﻿Shader "Custom/2_SpriteStuff" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Custom/2_SpriteStuff" {
 	
 	Properties{
 
@@ -21,7 +23,7 @@
 	v2f vert(appdata_base v)
 	{
 		v2f o;
-		o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+		o.pos = UnityObjectToClipPos(v.vertex);
 		o.color.xyz = v.normal * 0.5 + 0.5;
 		o.color.w = 1.0;
 		return o;
