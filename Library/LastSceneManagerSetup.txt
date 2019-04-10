@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ScenesGAME/LevelIntro.unity
+- path: Assets/Scenes/prototyping.unity
   isLoaded: 1
   isActive: 1

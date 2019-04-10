@@ -48,6 +48,11 @@ public class ProjectilePool : MonoBehaviour
             cBlaster.SetActive(false);
             cBlasterList.Add(cBlaster);
         }
+
+        playerBulletPosLR = GameObject.Find("Player").transform.GetChild(0);
+        playerBulletPosUp = GameObject.Find("Player").transform.GetChild(1);
+        playerBulletPosDown = GameObject.Find("Player").transform.GetChild(2);
+
     }
 
     public void ShootStuffDown()
@@ -92,6 +97,7 @@ public class ProjectilePool : MonoBehaviour
                 stuff[i].transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 stuff[i].transform.localScale = player.lookRight ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
                 stuff[i].GetComponent<Rigidbody2D>().velocity = shootDirX;
+                print("shoot");
                 break;
             }
         }

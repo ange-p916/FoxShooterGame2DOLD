@@ -26,6 +26,8 @@ public class Controller2D : MonoBehaviour {
     public CollisionInfo collisions;
     public Vector2 playerInputVector2;
 
+    public float shooting_speed = 10f;
+
     //shootstuff
     Vector2 shootDirX;
     Vector2 shootDirDiagonally;
@@ -55,7 +57,7 @@ public class Controller2D : MonoBehaviour {
     void Update()
     {
         ProjectilePool.Instance.shootDirX = shootDirX;
-        shootDirX.x = (player.lookRight) ? 20f : -20f;
+        shootDirX.x = (player.lookRight) ? shooting_speed : -shooting_speed;
         shootDirX.y = Random.Range(-0.2f, 0.2f);
     }
 

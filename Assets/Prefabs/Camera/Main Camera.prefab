@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8180172}
   - component: {fileID: 11464824}
   - component: {fileID: 11404860}
+  - component: {fileID: 114632996000668270}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.5, y: 38.6, z: -10}
+  m_LocalPosition: {x: 22.1, y: 41.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +59,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.29
   m_Depth: 5
   m_CullingMask:
     serializedVersion: 2
@@ -94,7 +95,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e038005619490fe408d8e989d164e2c6, type: 3}
   m_Name: 
@@ -103,11 +104,7 @@ MonoBehaviour:
   BloomEnabled: 1
   BloomParams:
     Quality: 1
-    BloomTint:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
+    BloomTint: {r: 1, g: 1, b: 1, a: 1}
     BloomThreshold: 0.7
     BloomIntensity: 0.79
     BloomSoftness: 2.46
@@ -130,6 +127,7 @@ MonoBehaviour:
     UseUnityDepthBuffer: 1
     AutoFocus: 1
     AutoFocusLayerMask:
+      serializedVersion: 2
       m_Bits: 4294967295
     AutoFocusSpeed: 5
     FocalLengthMultiplier: 0.33
@@ -145,25 +143,13 @@ MonoBehaviour:
     DoubleIntensityBlur: 0
   VisualizeCOC: 0
   ColorEffectsEnabled: 0
-  CloseTint:
-    r: 1
-    g: 0.5
-    b: 0
-    a: 1
-  FarTint:
-    r: 0
-    g: 0
-    b: 1
-    a: 1
+  CloseTint: {r: 1, g: 0.5, b: 0, a: 1}
+  FarTint: {r: 0, g: 0, b: 1, a: 1}
   CloseTintStrength: 0.387
   FarTintStrength: 0.43
   DesaturateDarksStrength: 1.06
   DesaturateFarObjsStrength: 0.516
-  FogTint:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  FogTint: {r: 1, g: 1, b: 1, a: 1}
   FogStrength: 0
   HalfResolution: 0
 --- !u!114 &11464824
@@ -186,7 +172,7 @@ MonoBehaviour:
   lookAheadDstX: 0.4
   lookSmoothTimeX: 0.1
   verticalSmoothTime: 0.1
-  focusAreaSize: {x: 0.57, y: 4}
+  focusAreaSize: {x: 0.57, y: 3}
   switchToCinematicMode: 0
   currentLookAheadX: 0
 --- !u!124 &12442268
@@ -207,3 +193,26 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117552}
   m_IsPrefabAsset: 1
+--- !u!114 &114632996000668270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117552}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78016a79914f20c4eba0038d3c8e08d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDialogueYet: 1
+  dialogue: {fileID: 0}
+  twman: {fileID: 0}
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
+  shortTimer: 2
+  smooth: 2
+  switchingToCinMode: 0
+  lerpTime: 2
+  curLerpTime: 0
+  startLerpingBool: 0

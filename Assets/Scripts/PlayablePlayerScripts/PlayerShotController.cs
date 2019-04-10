@@ -62,6 +62,7 @@ public class PlayerShotController : MonoBehaviour
             {
                 ProjectilePool.Instance.ShootStuffLR();
                 nextPosThrowTime = Time.time + secondsBetweenShots;
+                print("shooting");
             }
         }  //charging up the lazor
         else if(player.GetButton("Shoot") && controller.canShoot && controller.canShootStraight)
@@ -215,6 +216,7 @@ public class PlayerShotController : MonoBehaviour
         {
             ifcanshoot = false;
         }
-        return ifcanshoot;
+        return Time.time < nextPosThrowTime;
+       // return ifcanshoot;
     }
 }

@@ -48,10 +48,11 @@ GameObject:
   - component: {fileID: 11413852}
   - component: {fileID: 11466632}
   - component: {fileID: 11414826}
+  - component: {fileID: 114189614815452036}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -152,7 +153,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.8, y: 38.4, z: 0}
+  m_LocalPosition: {x: 21.988573, y: 41.00297, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412544}
@@ -347,11 +348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 2}
-  _color:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 61
   boxCollider2D: {fileID: 0}
@@ -425,11 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 2}
-  _color:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 87
   boxCollider2D: {fileID: 0}
@@ -452,6 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionMask:
+    serializedVersion: 2
     m_Bits: 2102016
   keyChildNumber: 1
   horizontalRayCount: 4
@@ -461,8 +455,9 @@ MonoBehaviour:
   throwVel: 10
   thisCollider: {fileID: 0}
   playerInputVector2: {x: 0, y: 0}
+  shooting_speed: 10
   canShoot: 1
-  canShootStraight: 0
+  canShootStraight: 1
   canShootUp: 0
   canShootDown: 0
 --- !u!114 &11486392
@@ -471,12 +466,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee3ac3384bc194c4fbccd14e542dc331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsBetweenShots: 0.15
+  secondsBetweenShots: 0.1
   chargingUp: 0
   hasFiredProjectile: 0
   chargeTimer: 0
@@ -495,13 +490,13 @@ MonoBehaviour:
   canWallJump: 0
   lookRight: 0
   listOfStuff: []
-  moveSpeed: 6
+  moveSpeed: 3
   wallJumpClimb: {x: 7.5, y: 13}
   wallJumpOff: {x: 8.5, y: 7}
   wallJumpLeap: {x: 10, y: 9}
   wallSlidingSpeedMax: 1
   wallStickTime: 0.25
-  maxJumpHeight: 3.2
+  maxJumpHeight: 2.5
   minJumpHeight: 0.5
   timeToJumpApex: 0.41
   gravityFactor: 2
@@ -533,3 +528,15 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 155904}
   m_IsPrefabAsset: 1
+--- !u!114 &114189614815452036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e29982ef7eed248a6a51c8feab27ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shot_cd: 0.15

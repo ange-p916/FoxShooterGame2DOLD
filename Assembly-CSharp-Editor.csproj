@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{AB83DB1A-B939-5E98-A59A-49EA70EB87D4}</ProjectGuid>
+    <ProjectGuid>{46B1198E-EECD-8C79-F304-38E5C03402C4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -168,16 +168,16 @@
     <Compile Include="Assets\TK2DROOT\tk2dUI\Editor\Core\tk2dUISpriteAnimatorEditor.cs" />
     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -416,6 +416,9 @@
     <Reference Include="UnityEditor.Graphs">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WebGL.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
     </Reference>
@@ -423,19 +426,19 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Editor">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/Rewired/Internal/Libraries/Editor/Rewired_Editor.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/Rewired/Internal/Libraries/Editor/Rewired_Editor.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Core">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Windows_Lib">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Windows_Lib.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Windows_Lib.dll</HintPath>
     </Reference>
     <Reference Include="tk2dExternal">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
     </Reference>
     <Reference Include="tk2dSkin">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Jalap/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
@@ -485,7 +488,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{0F933E57-D212-E9D7-1A66-6FA63043533C}</Project>
+      <Project>{D58349F3-49DE-0A77-BA40-2C72DD58BA41}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

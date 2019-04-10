@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxShooterGame2D", "FoxShooterGame2D.csproj", "{7272A818-CC4A-4351-37AC-8A5D44115EB3}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D58349F3-49DE-0A77-BA40-2C72DD58BA41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxShooterGame2D.Editor", "FoxShooterGame2D.Editor.csproj", "{9A20C287-DC83-6F6D-F6C6-44E526EF805B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{46B1198E-EECD-8C79-F304-38E5C03402C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7272A818-CC4A-4351-37AC-8A5D44115EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7272A818-CC4A-4351-37AC-8A5D44115EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7272A818-CC4A-4351-37AC-8A5D44115EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7272A818-CC4A-4351-37AC-8A5D44115EB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A20C287-DC83-6F6D-F6C6-44E526EF805B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A20C287-DC83-6F6D-F6C6-44E526EF805B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A20C287-DC83-6F6D-F6C6-44E526EF805B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A20C287-DC83-6F6D-F6C6-44E526EF805B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D58349F3-49DE-0A77-BA40-2C72DD58BA41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58349F3-49DE-0A77-BA40-2C72DD58BA41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58349F3-49DE-0A77-BA40-2C72DD58BA41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58349F3-49DE-0A77-BA40-2C72DD58BA41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B1198E-EECD-8C79-F304-38E5C03402C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B1198E-EECD-8C79-F304-38E5C03402C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B1198E-EECD-8C79-F304-38E5C03402C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B1198E-EECD-8C79-F304-38E5C03402C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{0F933E57-D212-E9D7-1A66-6FA63043533C}</ProjectGuid>
+    <ProjectGuid>{D58349F3-49DE-0A77-BA40-2C72DD58BA41}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -177,12 +177,14 @@
     <Compile Include="Assets\Scripts\MUSIC\MusicSfxController.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\ChargedUpProj.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\Controller2D.cs" />
+    <Compile Include="Assets\Scripts\PlayablePlayerScripts\CountdownScript.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\HealthBooster.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\HealthComponent.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\PlayablePlayer.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\PlayerDisableUtility.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\PlayerHealthController.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\PlayerProjectile.cs" />
+    <Compile Include="Assets\Scripts\PlayablePlayerScripts\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\PlayerShotController.cs" />
     <Compile Include="Assets\Scripts\PlayablePlayerScripts\ProjectilePool.cs" />
     <Compile Include="Assets\Scripts\PoolsnStuff\CreateExtraLivesScript.cs" />
@@ -347,16 +349,16 @@
     <None Include="Assets\GoldenZebra\Image Effects\FxPro\Shaders\Particle Add Intensity.shader" />
     <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -557,10 +559,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Core">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll</HintPath>
     </Reference>
     <Reference Include="Rewired_Windows_Lib">
-      <HintPath>D:/UNITYTHINGS/_ALL_UNITY_FOLDERS/FoxShooterGame2DOLD/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Windows_Lib.dll</HintPath>
+      <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Windows_Lib.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Jalap/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
