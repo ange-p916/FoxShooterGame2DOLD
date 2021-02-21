@@ -85,7 +85,7 @@ public class PlayerShooting : MonoBehaviour {
             {
                 if (input.GetButtonDown("Shoot") && CanShoot)
                 {
-                    ProjectilePool.Instance.ShootStuffLR();
+                    ProjectilePool.Instance.ShootRight();
                     next_shot_timer = Time.time + time_between_shots;
                     anim.Play("still_shoot");
                     is_walking = false;
@@ -105,7 +105,7 @@ public class PlayerShooting : MonoBehaviour {
             {
                 if (input.GetButtonDown("Shoot") && CanShoot)
                 {
-                    ProjectilePool.Instance.ShootStuffLR();
+                    ProjectilePool.Instance.ShootRight();
                     next_shot_timer = Time.time + time_between_shots;
                     is_idling = false;
                     anim.Play("still_shoot");

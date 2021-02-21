@@ -11,7 +11,8 @@ public class ProjectilePool : MonoBehaviour
     public GameObject bullet;
 
     [Header("LR Up Down")]
-    public Transform playerBulletPosLR;
+    public Transform playerBulletPosRight;
+    public Transform playerBulletPosLeft;
     public Transform playerBulletPosUp;
     public Transform playerBulletPosDown;
     //public Transform muzzleFlashPos;
@@ -49,9 +50,10 @@ public class ProjectilePool : MonoBehaviour
             cBlasterList.Add(cBlaster);
         }
 
-        playerBulletPosLR = GameObject.Find("Player").transform.GetChild(0);
-        playerBulletPosUp = GameObject.Find("Player").transform.GetChild(1);
-        playerBulletPosDown = GameObject.Find("Player").transform.GetChild(2);
+        playerBulletPosRight = GameObject.Find("Player").transform.GetChild(0);
+        playerBulletPosLeft = GameObject.Find("Player").transform.GetChild(1);
+        playerBulletPosUp = GameObject.Find("Player").transform.GetChild(2);
+        playerBulletPosDown = GameObject.Find("Player").transform.GetChild(3);
 
     }
 
@@ -85,7 +87,7 @@ public class ProjectilePool : MonoBehaviour
         }
     }
 
-    public void ShootStuffLR()
+    public void ShootRight()
     {
         for (int i = 0; i < bulletCount; i++)
         {
@@ -93,11 +95,28 @@ public class ProjectilePool : MonoBehaviour
             {
                 stuff[i].SetActive(true);
                 //MuzzleFlashFuncLR();
-                stuff[i].transform.position = playerBulletPosLR.position;
+                stuff[i].transform.position = playerBulletPosRight.position;
                 stuff[i].transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-                stuff[i].transform.localScale = player.lookRight ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
-                stuff[i].GetComponent<Rigidbody2D>().velocity = shootDirX;
-                print("shoot");
+                stuff[i].GetComponent<Rigidbody2D>().velocity = Vector2.right * 20f;
+                
+                break;
+            }
+        }
+    }
+
+    public void ShootLeft()
+    {
+        for (int i = 0; i < bulletCount; i++)
+        {
+            if (!stuff[i].activeInHierarchy)
+            {
+                stuff[i].SetActive(true);
+                //MuzzleFlashFuncLR();
+                stuff[i].transform.position = playerBulletPosLeft.position;
+                stuff[i].transform.rotation = Quaternion.Euler(new Vector3(0, 0, 180));
+                //stuff[i].transform.localScale = player.lookRight ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
+                stuff[i].GetComponent<Rigidbody2D>().velocity = Vector2.left * 20f;
+                
                 break;
             }
         }
@@ -110,7 +129,7 @@ public class ProjectilePool : MonoBehaviour
             if (!cBlasterList[i].activeInHierarchy)
             {
                 cBlasterList[i].SetActive(true);
-                cBlasterList[i].transform.position = playerBulletPosLR.position;
+                cBlasterList[i].transform.position = playerBulletPosRight.position;
                 cBlasterList[i].transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 cBlasterList[i].transform.localScale = player.lookRight ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
                 cBlasterList[i].GetComponent<Rigidbody2D>().velocity = shootDirX;

@@ -60,7 +60,7 @@ public class PlayerShotController : MonoBehaviour
             CheckBools(true, false, false);
             if (CanShoot())
             {
-                ProjectilePool.Instance.ShootStuffLR();
+                ProjectilePool.Instance.ShootRight();
                 nextPosThrowTime = Time.time + secondsBetweenShots;
                 print("shooting");
             }
@@ -135,7 +135,7 @@ public class PlayerShotController : MonoBehaviour
             CheckBools(true, false, false);
             if (CanShoot())
             {
-                ProjectilePool.Instance.ShootStuffLR();
+                ProjectilePool.Instance.ShootRight();
                 nextPosThrowTime = Time.time + secondsBetweenShots;
             }
         }

@@ -324,6 +324,8 @@ public class PlayablePlayer : MonoBehaviour
 
     private void JumpShootRight()
     {
+        if (anim.Sprite.FlipX == true)
+            return;
         if (state != CharacterState.Falling &&
             state != CharacterState.Running &&
             state != CharacterState.WallJump &&
@@ -334,10 +336,34 @@ public class PlayablePlayer : MonoBehaviour
                 moveDirection == Direction.Right) ||
                 ((lastState == CharacterState.Jumping &&
                     InputManager.GetButtonDown("Shoot") &&
-                moveDirection == Direction.Stationary)))
+                moveDirection == Direction.Stationary &&
+                anim.Sprite.FlipX == false)))
             {
                 anim.Play("jump_shoot_forward");
-                ProjectilePool.Instance.ShootStuffLR();
+                ProjectilePool.Instance.ShootRight();
+            }
+        }
+    }
+
+    private void JumpShootLeft()
+    {
+        if (anim.Sprite.FlipX == false)
+            return;
+
+        if (state != CharacterState.Falling &&
+            state != CharacterState.Running &&
+            state != CharacterState.WallJump &&
+            state != CharacterState.WallSlide)
+        {
+            if ((lastState == CharacterState.Jumping &&
+                    InputManager.GetButtonDown("Shoot") &&
+                moveDirection == Direction.Left) ||
+                ((lastState == CharacterState.Jumping &&
+                    InputManager.GetButtonDown("Shoot") &&
+                moveDirection == Direction.Stationary &&
+                anim.Sprite.FlipX == true)))
+            {
+                ProjectilePool.Instance.ShootLeft();
             }
         }
     }
@@ -381,6 +407,7 @@ public class PlayablePlayer : MonoBehaviour
         //    }
         //}
         JumpShootRight();
+        JumpShootLeft();
         JumpShootUp();
 
         
@@ -418,10 +445,8 @@ public class PlayablePlayer : MonoBehaviour
             {
                 if (controller.collisions.below)
                 {
-                    
                     state = CharacterState.Jumping;
                     lastState = state;
-                    print("jumping");
                 }
             }
             if (InputManager.GetButtonUp("Jump"))
@@ -456,12 +481,28 @@ public class PlayablePlayer : MonoBehaviour
                     anim.Play("idle");
                 break;
             case CharacterState.WalkLeft:
+                if (!anim.IsPlaying("walk") && lastState == CharacterState.Jumping == false)
+                {
+                    anim.Play("walk");
+                    anim.Sprite.FlipX = true;
+                }                    
                 break;
             case CharacterState.WalkRight:
+                if (!anim.IsPlaying("walk") && lastState == CharacterState.Jumping == false)
+                {
+                    anim.Play("walk");
+                    anim.Sprite.FlipX = false;
+                }
                 break;
             case CharacterState.Running:
                 break;
             case CharacterState.Jumping:
+                anim.Play("jump");
+                if (input.x > 0)
+                    anim.Sprite.FlipX = false;
+                else if (input.x < 0)
+                    anim.Sprite.FlipX = true;
+
                 velocity.y = maxJumpVelocity;
                 state = CharacterState.Idle;
                 //state = CharacterState.Idle;
