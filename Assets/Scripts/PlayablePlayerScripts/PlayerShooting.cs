@@ -9,28 +9,12 @@ public class PlayerShooting : MonoBehaviour {
     tk2dSpriteAnimator anim;
     private Controller2D controller;
     PlayablePlayer thePlayer;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    Player player;
-=======
-    Player input;
->>>>>>> Stashed changes
-=======
-    Player input;
->>>>>>> Stashed changes
 
+    Player input;
     public float next_shot_timer;
     public float time_between_shots = 0.15f;
     public float shot_cd = 0.05f;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
-    void Awake()
-    {
-        player = ReInput.players.GetPlayer(0);
-=======
-=======
->>>>>>> Stashed changes
     public float time_since_last_shot = 0.05f;
 
     public bool is_walking = false;
@@ -41,10 +25,6 @@ public class PlayerShooting : MonoBehaviour {
     void Awake()
     {
         input = ReInput.players.GetPlayer(0);
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         anim = GetComponent<tk2dSpriteAnimator>();
     }
 
@@ -55,17 +35,6 @@ public class PlayerShooting : MonoBehaviour {
 
     }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    void Update()
-    {
-        if (player.GetButtonDown("Shoot") && CanShoot )
-        {
-            ProjectilePool.Instance.ShootStuffLR();
-            next_shot_timer = Time.time + time_between_shots;
-=======
-=======
->>>>>>> Stashed changes
     void ShootCompleteDelegate(tk2dSpriteAnimator sprite, tk2dSpriteAnimationClip clip)
     {
         if (is_walking)
@@ -86,9 +55,9 @@ public class PlayerShooting : MonoBehaviour {
     {
         if (controller.collisions.below)
         {
-            if(thePlayer.input.x != 0)
+            if (thePlayer.input.x != 0)
             {
-                if (!is_shooting && !anim.IsPlaying("walk") )
+                if (!is_shooting && !anim.IsPlaying("walk"))
                 {
                     anim.Play("walk");
                     anim.AnimationCompleted = null;
@@ -98,9 +67,9 @@ public class PlayerShooting : MonoBehaviour {
             }
             else
             {
-                if(!is_shooting)
+                if (!is_shooting)
                 {
-                    
+
                     is_idling = true;
                     anim.Play("idle");
                     anim.AnimationCompleted = null;
@@ -111,8 +80,8 @@ public class PlayerShooting : MonoBehaviour {
                     is_shooting = true;
                 }
             }
-            
-            if(input.GetAxisRaw("Move Horizontal") != 0)
+
+            if (input.GetAxisRaw("Move Horizontal") != 0)
             {
                 if (input.GetButtonDown("Shoot") && CanShoot)
                 {
@@ -120,7 +89,7 @@ public class PlayerShooting : MonoBehaviour {
                     next_shot_timer = Time.time + time_between_shots;
                     anim.Play("still_shoot");
                     is_walking = false;
-                    
+
                     print("is true now");
                     is_shooting = true;
                     time_since_last_shot = next_shot_timer;
@@ -132,7 +101,7 @@ public class PlayerShooting : MonoBehaviour {
                     print("is false now");
                 }
             }
-            else 
+            else
             {
                 if (input.GetButtonDown("Shoot") && CanShoot)
                 {
@@ -151,29 +120,9 @@ public class PlayerShooting : MonoBehaviour {
                 }
 
             }
-            
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         }
 
     }
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-    void animations()
-    {
-
-    }
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     void CheckBools(bool shootStraight, bool shootUp, bool shootDown)
     {
         controller.canShootStraight = shootStraight;

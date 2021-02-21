@@ -80,75 +80,11 @@ GameObject:
   - component: {fileID: 11466632}
   - component: {fileID: 11414826}
   - component: {fileID: 114189614815452036}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
   - component: {fileID: 114657131971848726}
->>>>>>> Stashed changes
-=======
-  - component: {fileID: 114657131971848726}
->>>>>>> Stashed changes
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &186436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 408766}
-  m_Layer: 10
-  m_Name: BulletPosUp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &195082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 452072}
-  - component: {fileID: 10852358}
-  m_Layer: 11
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &195564
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 483528}
-  - component: {fileID: 2324214}
-  - component: {fileID: 3364640}
-  - component: {fileID: 11437728}
-  - component: {fileID: 11467848}
-  - component: {fileID: 11422552}
-  m_Layer: 10
-  m_Name: ChargingUp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -160,15 +96,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 21.988573, y: 41.00297, z: 0}
-=======
   m_LocalPosition: {x: 13.9, y: 23.993, z: 0}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 13.9, y: 23.993, z: 0}
->>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 412544}
@@ -345,7 +273,6 @@ MeshFilter:
 --- !u!114 &11413852
 MonoBehaviour:
   m_ObjectHideFlags: 0
-<<<<<<< Updated upstream
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -370,41 +297,12 @@ MonoBehaviour:
 --- !u!114 &11466632
 MonoBehaviour:
   m_ObjectHideFlags: 0
-=======
->>>>>>> Stashed changes
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< Updated upstream
-=======
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 3}
-  _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 61
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
-  boxCollider: {fileID: 0}
-  meshCollider: {fileID: 0}
-  meshColliderPositions: []
-  meshColliderMesh: {fileID: 0}
-  renderLayer: 0
---- !u!114 &11466632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
->>>>>>> Stashed changes
   m_Script: {fileID: 11500000, guid: a5e54113e5604435b8ae87c7754f2725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -585,33 +483,6 @@ Light:
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 2}
-  _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 61
-  boxCollider2D: {fileID: 0}
-  polygonCollider2D: []
-  edgeCollider2D: []
-  boxCollider: {fileID: 0}
-  meshCollider: {fileID: 0}
-  meshColliderPositions: []
-  meshColliderMesh: {fileID: 0}
-  renderLayer: 0
---- !u!114 &11414826
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-=======
-=======
->>>>>>> Stashed changes
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -632,10 +503,6 @@ MonoBehaviour:
 --- !u!4 &483528
 Transform:
   m_ObjectHideFlags: 0
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -721,15 +588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 2}
-=======
   collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 3}
->>>>>>> Stashed changes
-=======
-  collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 3}
->>>>>>> Stashed changes
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 87
@@ -741,84 +600,7 @@ MonoBehaviour:
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
   renderLayer: 1
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
---- !u!114 &11470426
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 524e1972e94ad524b94c3ba766800661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionMask:
-    serializedVersion: 2
-    m_Bits: 2102016
-  keyChildNumber: 1
-  horizontalRayCount: 4
-  verticalRayCount: 4
-  maxClimbAngle: 80
-  maxDescendAngle: 75
-  throwVel: 10
-  thisCollider: {fileID: 0}
-  playerInputVector2: {x: 0, y: 0}
-  shooting_speed: 10
-  canShoot: 1
-  canShootStraight: 1
-  canShootUp: 0
-  canShootDown: 0
---- !u!114 &11486392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155904}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee3ac3384bc194c4fbccd14e542dc331, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  secondsBetweenShots: 0.1
-  chargingUp: 0
-  hasFiredProjectile: 0
-  chargeTimer: 0
---- !u!114 &11488690
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c10ce50bad4ff44c824d7a3d5febacb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runSpeed: 1.32
-  canWallJump: 0
-  lookRight: 0
-  listOfStuff: []
-  moveSpeed: 3
-  wallJumpClimb: {x: 7.5, y: 13}
-  wallJumpOff: {x: 8.5, y: 7}
-  wallJumpLeap: {x: 10, y: 9}
-  wallSlidingSpeedMax: 1
-  wallStickTime: 0.25
-  maxJumpHeight: 2.5
-  minJumpHeight: 0.5
-  timeToJumpApex: 0.41
-  gravityFactor: 2
-  velocity: {x: 0, y: 0, z: 0}
-  input: {x: 0, y: 0}
---- !u!114 &11488948
-=======
 --- !u!114 &11422552
->>>>>>> Stashed changes
-=======
---- !u!114 &11422552
->>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -830,38 +612,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e29bcc85e59f7b54a958de91bb7b5521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  deathImg: {fileID: 0}
-  isInvincible: 0
-  curHealth: 3
-  maxHealth: 3
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 155904}
-  m_IsPrefabAsset: 1
---- !u!114 &114189614815452036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41e29982ef7eed248a6a51c8feab27ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shot_cd: 0.15
-=======
   msr: {fileID: 2324214}
->>>>>>> Stashed changes
-=======
-  msr: {fileID: 2324214}
->>>>>>> Stashed changes
