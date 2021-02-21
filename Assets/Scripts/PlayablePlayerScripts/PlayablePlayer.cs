@@ -351,6 +351,7 @@ public class PlayablePlayer : MonoBehaviour
     }
     private void WalkShootRight()
     {
+        
         if (state != CharacterState.Falling &&
             state != CharacterState.Jumping &&
             state != CharacterState.Running &&
@@ -373,8 +374,6 @@ public class PlayablePlayer : MonoBehaviour
 
     private void WalkShootLeft()
     {
-        if (anim.Sprite.FlipX == false)
-            return;
         if (state != CharacterState.Falling &&
             state != CharacterState.Jumping &&
             state != CharacterState.Running &&
@@ -393,6 +392,7 @@ public class PlayablePlayer : MonoBehaviour
                 state = CharacterState.Shooting;
                 
                 ProjectilePool.Instance.ShootLeft();
+                state = CharacterState.Shooting;
             }
         }
     }
@@ -543,13 +543,13 @@ public class PlayablePlayer : MonoBehaviour
                     anim.Play("idle");
                 break;
             case CharacterState.WalkLeft:
-                //if (state != CharacterState.Shooting &&
-                //    !anim.IsPlaying("walk") && 
-                //    lastState == CharacterState.Jumping == false)
-                //{
-                //    anim.Play("walk");
-                //    anim.Sprite.FlipX = true;
-                //}                    
+                if (
+                    !anim.IsPlaying("walk") &&
+                    lastState == CharacterState.Jumping == false)
+                {
+                    anim.Play("walk");
+                    anim.Sprite.FlipX = true;
+                }                 
                 break;
             case CharacterState.WalkRight:
                 if (
