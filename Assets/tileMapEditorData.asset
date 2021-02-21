@@ -42,6 +42,7 @@ MonoBehaviour:
       y: 0
       layer: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       spriteId: 28
       blendAmount: 0
     multiSelectTiles: 1c000000
@@ -50,6 +51,8 @@ MonoBehaviour:
     overrideWithSpriteBounds: 0
     brushHash: 351849216
 =======
+=======
+>>>>>>> Stashed changes
       spriteId: 5
       blendAmount: 0
     multiSelectTiles: 05000000
@@ -57,6 +60,9 @@ MonoBehaviour:
     multiLayer: 0
     overrideWithSpriteBounds: 0
     brushHash: -2145404416
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   brushes: []
   paletteBrush:
@@ -889,7 +895,11 @@ MonoBehaviour:
     multiLayer: 0
     overrideWithSpriteBounds: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     brushHash: -1873332544
+=======
+    brushHash: -20779008
+>>>>>>> Stashed changes
 =======
     brushHash: -20779008
 >>>>>>> Stashed changes
@@ -898,7 +908,11 @@ MonoBehaviour:
   showBrush: 0
   showPalette: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   layer: 0
+=======
+  layer: 1
+>>>>>>> Stashed changes
 =======
   layer: 1
 >>>>>>> Stashed changes

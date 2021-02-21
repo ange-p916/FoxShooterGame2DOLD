@@ -1394,6 +1394,7 @@ Prefab:
       value: 
       objectReference: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 3364640, guid: d24073c2637468e46ab4354bf84ce448, type: 2}
       propertyPath: m_Mesh
       value: 
@@ -1414,11 +1415,16 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 11486392, guid: d24073c2637468e46ab4354bf84ce448, type: 2}
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 11414826, guid: d24073c2637468e46ab4354bf84ce448, type: 2}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_SourcePrefab: {fileID: 100100000, guid: d24073c2637468e46ab4354bf84ce448, type: 2}
   m_IsPrefabAsset: 0

@@ -9,9 +9,14 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <RootNamespace>
     </RootNamespace>
     <ProjectGuid>{D58349F3-49DE-0A77-BA40-2C72DD58BA41}</ProjectGuid>
+=======
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{DD21534F-26C7-EFA7-F860-2AEAF8CB7E7D}</ProjectGuid>
+>>>>>>> Stashed changes
 =======
     <RootNamespace></RootNamespace>
     <ProjectGuid>{DD21534F-26C7-EFA7-F860-2AEAF8CB7E7D}</ProjectGuid>
@@ -352,6 +357,7 @@
     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
     <None Include="Assets\ShaderStuff\OldShaderStuff\5_SpriteStuff.shader" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <None Include="Assets\GoldenZebra\Image Effects\FxPro\Shaders\Resources\FxProInclude.cginc" />
     <None Include="Assets\GoldenZebra\Image Effects\FxPro\Shaders\Particle Add Intensity.shader" />
     <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
@@ -366,6 +372,10 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+=======
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+>>>>>>> Stashed changes
 =======
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -570,6 +580,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
     </Reference>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Reference Include="Rewired_Core">
       <HintPath>C:/Users/Jalap/Documents/FoxShooterGame2D/Assets/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll</HintPath>
     </Reference>
@@ -604,6 +615,35 @@
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
     </Reference>
+=======
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+    </Reference>
+>>>>>>> Stashed changes
     <Reference Include="System.AppContext">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
     </Reference>

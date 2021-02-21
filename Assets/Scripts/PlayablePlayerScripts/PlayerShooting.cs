@@ -10,7 +10,11 @@ public class PlayerShooting : MonoBehaviour {
     private Controller2D controller;
     PlayablePlayer thePlayer;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     Player player;
+=======
+    Player input;
+>>>>>>> Stashed changes
 =======
     Player input;
 >>>>>>> Stashed changes
@@ -19,11 +23,14 @@ public class PlayerShooting : MonoBehaviour {
     public float time_between_shots = 0.15f;
     public float shot_cd = 0.05f;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     void Awake()
     {
         player = ReInput.players.GetPlayer(0);
 =======
+=======
+>>>>>>> Stashed changes
     public float time_since_last_shot = 0.05f;
 
     public bool is_walking = false;
@@ -34,6 +41,9 @@ public class PlayerShooting : MonoBehaviour {
     void Awake()
     {
         input = ReInput.players.GetPlayer(0);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         anim = GetComponent<tk2dSpriteAnimator>();
     }
@@ -46,6 +56,7 @@ public class PlayerShooting : MonoBehaviour {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     void Update()
     {
         if (player.GetButtonDown("Shoot") && CanShoot )
@@ -53,6 +64,8 @@ public class PlayerShooting : MonoBehaviour {
             ProjectilePool.Instance.ShootStuffLR();
             next_shot_timer = Time.time + time_between_shots;
 =======
+=======
+>>>>>>> Stashed changes
     void ShootCompleteDelegate(tk2dSpriteAnimator sprite, tk2dSpriteAnimationClip clip)
     {
         if (is_walking)
@@ -139,18 +152,27 @@ public class PlayerShooting : MonoBehaviour {
 
             }
             
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         }
 
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     void animations()
     {
 
     }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     void CheckBools(bool shootStraight, bool shootUp, bool shootDown)
     {
