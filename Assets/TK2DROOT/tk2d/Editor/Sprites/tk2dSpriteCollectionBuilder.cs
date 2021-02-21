@@ -502,8 +502,7 @@ public class tk2dSpriteCollectionBuilder
 			
 			GameObject go = new GameObject();
 			go.AddComponent<tk2dSpriteCollectionData>();
-			Object p = PrefabUtility.CreateEmptyPrefab(prefabObjectPath);
-			PrefabUtility.ReplacePrefab(go, p);
+			PrefabUtility.SaveAsPrefabAsset(go, prefabObjectPath);
 			GameObject.DestroyImmediate(go);
 			AssetDatabase.SaveAssets();
 

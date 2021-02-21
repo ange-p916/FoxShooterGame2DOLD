@@ -48,8 +48,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.5625, y: 0.5625}
+    newSize: {x: 0.5625, y: 0.5625}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -73,6 +73,7 @@ MonoBehaviour:
   theText: {fileID: 0}
   textToReadFrom: {fileID: 4900000, guid: 965ee86b66ec09b4ca01916649c655cd, type: 3}
   textLines: []
+  shouldHaveUtility: 1
   startDialogue: 0
   hasFinished: 0
   lineToStartFrom: 0
@@ -92,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WhatIsPlayer:
+    serializedVersion: 2
     m_Bits: 1024
   hasPickedUpYet: 0
 --- !u!212 &21291046
@@ -129,12 +131,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: da8451db5eaeab24ca5f86d472fdd09c, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.006896496, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8ab8c15ea8bead14fb1c286f2d8ef724, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5625, y: 0.5625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

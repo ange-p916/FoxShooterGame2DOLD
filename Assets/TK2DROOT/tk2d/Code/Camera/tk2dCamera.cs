@@ -660,7 +660,10 @@ public class tk2dCamera : MonoBehaviour
 		bool needHalfTexelOffset = (Application.platform == RuntimePlatform.WindowsPlayer ||
 									isWebPlayer ||
 						   			Application.platform == RuntimePlatform.WindowsEditor);
-		float halfTexel = (halfTexelOffset && needHalfTexelOffset && SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Direct3D9) ? 0.5f : 0.0f;
+
+        // D3D9 No longer supported in Unity 2018
+       bool isDirect3D9Device = false; // SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Direct3D9
+       float halfTexel = (halfTexelOffset && needHalfTexelOffset && isDirect3D9Device) ? 0.5f : 0.0f;
 
 		float orthoSize = settings.cameraSettings.orthographicSize;
 		switch (settings.cameraSettings.orthographicType) {

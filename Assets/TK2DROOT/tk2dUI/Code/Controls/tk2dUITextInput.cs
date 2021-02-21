@@ -372,7 +372,7 @@ public class tk2dUITextInput : MonoBehaviour
 #if TOUCH_SCREEN_KEYBOARD
     private IEnumerator TouchScreenKeyboardLoop()
     {
-        while (keyboard != null && !keyboard.done && keyboard.active)
+        while (keyboard != null && keyboard.status != TouchScreenKeyboard.Status.Done && keyboard.active)
         {
 			bool needChange = Text != keyboard.text;
 			if (needChange)
@@ -414,7 +414,7 @@ public class tk2dUITextInput : MonoBehaviour
         listenForKeyboardText = false;
         SetState();
 #if TOUCH_SCREEN_KEYBOARD
-        if (keyboard!=null && !keyboard.done)
+        if (keyboard!=null && keyboard.status != TouchScreenKeyboard.Status.Done)
         {
             keyboard.active = false;
         }

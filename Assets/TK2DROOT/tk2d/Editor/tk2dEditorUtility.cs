@@ -8,7 +8,7 @@ public static class tk2dEditorUtility
 {
 	public static double version = 2.5;
 	public static int releaseId = 8; // < -10001 = alpha 1, other negative = beta release, 0 = final, positive = final hotfix
-	public static int buildNo = 9;
+	public static int buildNo = 16;
 
 	static tk2dEditorUtility() {
 #if UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2
@@ -107,7 +107,50 @@ public static class tk2dEditorUtility
 		Application.OpenURL(string.Format("mailto:support@unikronsoftware.com?subject=2D%20Toolkit%20{0:0.0}{1}%20Support", version, (releaseId!=0)?releaseId.ToString():"" ));
 	}
 
-	[MenuItem(tk2dMenu.root + "Rebuild Index", false, 1)]
+    [MenuItem(tk2dMenu.root + "Edit...", true, -10000)]
+    public static bool EditValidator()
+    {
+        var go = Selection.activeGameObject;
+        var gen = go?.GetComponent<tk2dSpriteCollection>();
+        var anim = go?.GetComponent<tk2dSpriteAnimation>();
+
+        return gen || anim;
+    }
+
+    [MenuItem(tk2dMenu.root + "Edit...", false, -10000)]
+    public static void Edit()
+    {
+        var go = Selection.activeGameObject;
+        var gen = go?.GetComponent<tk2dSpriteCollection>();
+        var anim = go?.GetComponent<tk2dSpriteAnimation>();
+        if (gen != null)
+        {
+            tk2dSpriteCollectionEditorPopup v = EditorWindow.GetWindow(typeof(tk2dSpriteCollectionEditorPopup), false, "SpriteCollection") as tk2dSpriteCollectionEditorPopup;
+            v.SetGenerator(gen);
+            v.Show();
+        }
+        if (anim != null)
+        {
+            tk2dSpriteAnimationEditorPopup v = EditorWindow.GetWindow(typeof(tk2dSpriteAnimationEditorPopup), false, "SpriteAnimation") as tk2dSpriteAnimationEditorPopup;
+            v.SetSpriteAnimation(anim);
+            v.Show();
+        }
+    }
+
+    [MenuItem(tk2dMenu.root + "Commit Font...", false, -9999)]
+    public static void CommitFont()
+    {
+        var go = Selection.activeGameObject;
+        var gen = go?.GetComponent<tk2dFont>();
+        if (gen != null)
+        {
+            tk2dFontEditor.Build(gen);
+        }
+    }
+
+
+
+    [MenuItem(tk2dMenu.root + "Rebuild Index", false, 1)]
 	public static void RebuildIndex()
 	{
 		AssetDatabase.DeleteAsset(indexPath);
@@ -416,7 +459,7 @@ public static class tk2dEditorUtility
 
 	public static bool IsPrefab(Object obj)
 	{
-		return (PrefabUtility.GetPrefabType(obj) == PrefabType.Prefab);
+        return (PrefabUtility.GetPrefabAssetType(obj) == PrefabAssetType.Regular);
 	}
 
 	public static bool IsEditable(UnityEngine.Object obj) {

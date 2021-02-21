@@ -86,11 +86,12 @@ public class MusicManager : MonoBehaviour {
 
             if (input.GetButtonDown("Jump"))
             {
-                jumpsound.PlayDelayed(0f);
+                if(!jumpsound.isPlaying)
+                    jumpsound.Play();
             }
             if (input.GetButtonDown("Shoot"))
             {
-                shotsound.PlayDelayed(0f);
+                shotsound.Play();
             }
         }
     }

@@ -267,9 +267,6 @@ public class Controller2D : MonoBehaviour {
         {
             VerticalCollisions(ref velocity);
         }
-
-
-
         transform.Translate(velocity);
     }
 

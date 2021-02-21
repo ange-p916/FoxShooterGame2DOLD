@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -40,6 +41,7 @@ MonoBehaviour:
     - x: 0
       y: 0
       layer: 0
+<<<<<<< Updated upstream
       spriteId: 28
       blendAmount: 0
     multiSelectTiles: 1c000000
@@ -47,6 +49,15 @@ MonoBehaviour:
     multiLayer: 0
     overrideWithSpriteBounds: 0
     brushHash: 351849216
+=======
+      spriteId: 5
+      blendAmount: 0
+    multiSelectTiles: 05000000
+    edgeMode: 0
+    multiLayer: 0
+    overrideWithSpriteBounds: 0
+    brushHash: -2145404416
+>>>>>>> Stashed changes
   brushes: []
   paletteBrush:
     name: 
@@ -877,12 +888,20 @@ MonoBehaviour:
     edgeMode: 0
     multiLayer: 0
     overrideWithSpriteBounds: 1
+<<<<<<< Updated upstream
     brushHash: -1873332544
+=======
+    brushHash: -20779008
+>>>>>>> Stashed changes
   paletteTilesPerRow: 7
-  setupMode: 16
-  showBrush: 1
+  setupMode: 0
+  showBrush: 0
   showPalette: 1
+<<<<<<< Updated upstream
   layer: 0
+=======
+  layer: 1
+>>>>>>> Stashed changes
   scratchpads:
   - width: 5
     height: 5

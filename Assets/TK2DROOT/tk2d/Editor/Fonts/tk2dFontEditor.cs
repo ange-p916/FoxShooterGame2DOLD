@@ -6,7 +6,7 @@ using System.Collections.Generic;
 [CustomEditor(typeof(tk2dFont))]
 public class tk2dFontEditor : Editor 
 {
-	public Shader GetShader(bool gradient, bool packed)
+	public static Shader GetShader(bool gradient, bool packed)
 	{
 		if (packed) return Shader.Find("tk2d/Goodies/PackedTextMesh");
 		else if (gradient) return Shader.Find("tk2d/Blend2TexVertexColor");
@@ -66,84 +66,17 @@ public class tk2dFontEditor : Editor
 			}
 		}
 
-		if (GUILayout.Button("Commit..."))
+
+        string message = @"Due to changes in the prefab system in Unity 2018.3, the commit functionality has been moved." +
+                          "Exit prefab edit mode, select your font collection and click 2D Toolikt / Commit Font in the main menu";
+        tk2dGuiUtility.InfoBox(message, tk2dGuiUtility.WarningLevel.Warning);
+
+
+        GUI.enabled = false;
+        if (GUILayout.Button("Commit..."))
 		{
-			if (gen.bmFont == null || gen.texture == null)
-			{
-				EditorUtility.DisplayDialog("BMFont", "Need an bmFont and texture bound to work", "Ok");
-				return;
-			}
-			
-			if (gen.material == null)
-			{
-				gen.material = new Material(GetShader(gen.gradientTexture != null, gen.data != null && gen.data.isPacked));
-				string materialPath = AssetDatabase.GetAssetPath(gen).Replace(".prefab", "material.mat");
-				AssetDatabase.CreateAsset(gen.material, materialPath);
-			}
-			
-			if (gen.data == null)
-			{
-				string bmFontPath = AssetDatabase.GetAssetPath(gen).Replace(".prefab", "data.prefab");
-				
-				GameObject go = new GameObject();
-				go.AddComponent<tk2dFontData>();
-				tk2dEditorUtility.SetGameObjectActive(go, false);
-				
-				Object p = PrefabUtility.CreateEmptyPrefab(bmFontPath);
-				PrefabUtility.ReplacePrefab(go, p);
-
-				GameObject.DestroyImmediate(go);
-				AssetDatabase.SaveAssets();
-				
-				gen.data = AssetDatabase.LoadAssetAtPath(bmFontPath, typeof(tk2dFontData)) as tk2dFontData;
-			}
-			
-			ParseBMFont(AssetDatabase.GetAssetPath(gen.bmFont), gen.data, gen);
-
-			if (gen.manageMaterial)
-			{
-				Shader s = GetShader(gen.gradientTexture != null, gen.data != null && gen.data.isPacked);
-				if (gen.material.shader != s)
-				{
-					gen.material.shader = s;
-					tk2dUtil.SetDirty(gen.material);
-				}
-				if (gen.material.mainTexture != gen.texture)
-				{
-					gen.material.mainTexture = gen.texture;
-					tk2dUtil.SetDirty(gen.material);
-				}
-				if (gen.gradientTexture != null && gen.gradientTexture != gen.material.GetTexture("_GradientTex"))
-				{
-					gen.material.SetTexture("_GradientTex", gen.gradientTexture);
-					tk2dUtil.SetDirty(gen.material);
-				}
-			}
-			
-			gen.data.version = tk2dFontData.CURRENT_VERSION;
-
-			gen.data.material = gen.material;
-			gen.data.textureGradients = gen.gradientTexture != null;
-			gen.data.gradientCount = gen.gradientCount;
-			gen.data.gradientTexture = gen.gradientTexture;
-			
-			gen.data.invOrthoSize = 1.0f / gen.sizeDef.OrthoSize;
-			gen.data.halfTargetHeight = gen.sizeDef.TargetHeight * 0.5f;
-			
-            // Rebuild assets already present in the scene
-            tk2dTextMesh[] sprs = Resources.FindObjectsOfTypeAll(typeof(tk2dTextMesh)) as tk2dTextMesh[];
-            foreach (tk2dTextMesh spr in sprs)
-            {
-                spr.Init(true);
-            }
-			
-			tk2dUtil.SetDirty(gen);
-			tk2dUtil.SetDirty(gen.data);
-
-			// update index
-			tk2dEditorUtility.GetOrCreateIndex().AddOrUpdateFont(gen);
-			tk2dEditorUtility.CommitIndex();
         }
+        GUI.enabled = true;
 
 		EditorGUILayout.EndVertical();
 
@@ -170,7 +103,85 @@ public class tk2dFontEditor : Editor
 		}
 	}
 	
-	void ConvertTextureToUncompressed(Texture2D texture)
+    public static void Build(tk2dFont gen)
+    {
+        if (gen.bmFont == null || gen.texture == null)
+        {
+            EditorUtility.DisplayDialog("BMFont", "Need an bmFont and texture bound to work", "Ok");
+            return;
+        }
+
+        if (gen.material == null)
+        {
+            gen.material = new Material(GetShader(gen.gradientTexture != null, gen.data != null && gen.data.isPacked));
+            string materialPath = AssetDatabase.GetAssetPath(gen).Replace(".prefab", "material.mat");
+            AssetDatabase.CreateAsset(gen.material, materialPath);
+        }
+
+        if (gen.data == null)
+        {
+            string bmFontPath = AssetDatabase.GetAssetPath(gen).Replace(".prefab", "data.prefab");
+
+            GameObject go = new GameObject();
+            go.AddComponent<tk2dFontData>();
+            tk2dEditorUtility.SetGameObjectActive(go, false);
+
+            PrefabUtility.SaveAsPrefabAsset(go, bmFontPath);
+
+            GameObject.DestroyImmediate(go);
+            AssetDatabase.SaveAssets();
+
+            gen.data = AssetDatabase.LoadAssetAtPath(bmFontPath, typeof(tk2dFontData)) as tk2dFontData;
+        }
+
+        ParseBMFont(AssetDatabase.GetAssetPath(gen.bmFont), gen.data, gen);
+
+        if (gen.manageMaterial)
+        {
+            Shader s = GetShader(gen.gradientTexture != null, gen.data != null && gen.data.isPacked);
+            if (gen.material.shader != s)
+            {
+                gen.material.shader = s;
+                tk2dUtil.SetDirty(gen.material);
+            }
+            if (gen.material.mainTexture != gen.texture)
+            {
+                gen.material.mainTexture = gen.texture;
+                tk2dUtil.SetDirty(gen.material);
+            }
+            if (gen.gradientTexture != null && gen.gradientTexture != gen.material.GetTexture("_GradientTex"))
+            {
+                gen.material.SetTexture("_GradientTex", gen.gradientTexture);
+                tk2dUtil.SetDirty(gen.material);
+            }
+        }
+
+        gen.data.version = tk2dFontData.CURRENT_VERSION;
+
+        gen.data.material = gen.material;
+        gen.data.textureGradients = gen.gradientTexture != null;
+        gen.data.gradientCount = gen.gradientCount;
+        gen.data.gradientTexture = gen.gradientTexture;
+
+        gen.data.invOrthoSize = 1.0f / gen.sizeDef.OrthoSize;
+        gen.data.halfTargetHeight = gen.sizeDef.TargetHeight * 0.5f;
+
+        // Rebuild assets already present in the scene
+        tk2dTextMesh[] sprs = Resources.FindObjectsOfTypeAll(typeof(tk2dTextMesh)) as tk2dTextMesh[];
+        foreach (tk2dTextMesh spr in sprs)
+        {
+            spr.Init(true);
+        }
+
+        tk2dUtil.SetDirty(gen);
+        tk2dUtil.SetDirty(gen.data);
+
+        // update index
+        tk2dEditorUtility.GetOrCreateIndex().AddOrUpdateFont(gen);
+        tk2dEditorUtility.CommitIndex();
+    }
+
+    void ConvertTextureToUncompressed(Texture2D texture)
 	{
 		string assetPath = AssetDatabase.GetAssetPath(texture); 
 		if (assetPath != "")
@@ -195,7 +206,7 @@ public class tk2dFontEditor : Editor
 	
 	
 	
-	bool ParseBMFont(string path, tk2dFontData fontData, tk2dFont source)
+	static bool ParseBMFont(string path, tk2dFontData fontData, tk2dFont source)
 	{
 		float scale = 2.0f * source.sizeDef.OrthoSize / source.sizeDef.TargetHeight;
 		
@@ -221,8 +232,8 @@ public class tk2dFontEditor : Editor
 			}
 			tk2dEditorUtility.SetGameObjectActive(go, false);
 
-			Object p = PrefabUtility.CreateEmptyPrefab(path);
-			PrefabUtility.ReplacePrefab(go, p, ReplacePrefabOptions.ConnectToPrefab);
+
+            PrefabUtility.SaveAsPrefabAsset(go, path);
 			GameObject.DestroyImmediate(go);
 			
 			// Select object

@@ -4,6 +4,7 @@ using Rewired;
 
 public class TutAnimController : MonoBehaviour {
 
+    IsInTest IsInTest;
     tk2dSpriteAnimator anim;
     Player input;
     PlayablePlayer thePlayer;
@@ -14,6 +15,7 @@ public class TutAnimController : MonoBehaviour {
 
     void Start()
     {
+        IsInTest = GetComponent<IsInTest>();
         anim = GetComponent<tk2dSpriteAnimator>();
         input = ReInput.players.GetPlayer(0);
         thePlayer = GetComponent<PlayablePlayer>();
@@ -88,9 +90,9 @@ public class TutAnimController : MonoBehaviour {
             //run and shoot straight
             if (thePlayer.input.x != 0 && input.GetButton("Run") && controller.canShootStraight && input.GetButtonDown("Shoot"))
             {
-                if (!anim.IsPlaying("runShoot"))
+                if (!anim.IsPlaying("run_shoot"))
                 {
-                    anim.Play("runShoot");
+                    anim.Play("run_shoot");
                     anim.AnimationCompleted = ShootCompleteDelegate;
                 }
             }
@@ -156,14 +158,18 @@ public class TutAnimController : MonoBehaviour {
 
         }
 
-        if(CheckpointManager.Instance.isDead)
+        if (!IsInTest.Testing)
         {
-            if(!anim.IsPlaying("death"))
+            if (CheckpointManager.Instance.isDead)
             {
-                anim.Play("death");
-                anim.AnimationCompleted = null;
+                if (!anim.IsPlaying("death"))
+                {
+                    anim.Play("death");
+                    anim.AnimationCompleted = null;
+                }
             }
         }
+
         
     }
 

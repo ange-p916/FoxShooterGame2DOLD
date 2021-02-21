@@ -215,10 +215,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionMask:
+    serializedVersion: 2
     m_Bits: 8192
   rotAngle: 30
   timer: 0
-  travelDuration: 0.4
+  travelDuration: 0.7
   isChargingUp: 0
 --- !u!114 &11477244
 MonoBehaviour:
@@ -232,11 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11441902, guid: a9dae59780f7fe04793629106da46be2, type: 2}
-  _color:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 84
   boxCollider2D: {fileID: 0}

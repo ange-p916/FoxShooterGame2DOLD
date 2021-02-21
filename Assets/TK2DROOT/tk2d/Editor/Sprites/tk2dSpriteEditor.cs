@@ -290,7 +290,7 @@ class tk2dSpriteEditor : Editor
 		if (GUI.changed)
 		{
 			foreach (tk2dBaseSprite sprite in targetSprites) {
-			if (PrefabUtility.GetPrefabType(sprite) == PrefabType.Prefab)
+			if (PrefabUtility.GetPrefabAssetType(sprite) == PrefabAssetType.Regular)
 				needUpdatePrefabs = true;
 				tk2dUtil.SetDirty(sprite);
 			}
@@ -303,7 +303,7 @@ class tk2dSpriteEditor : Editor
 			tk2dBaseSprite[] allSprites = Resources.FindObjectsOfTypeAll(typeof(tk2dBaseSprite)) as tk2dBaseSprite[];
 			foreach (var spr in allSprites)
 			{
-				if (PrefabUtility.GetPrefabType(spr) == PrefabType.PrefabInstance)
+				if (PrefabUtility.GetPrefabInstanceStatus(spr) == PrefabInstanceStatus.Connected)
 				{
 					Object parent = PrefabUtility.GetCorrespondingObjectFromSource(spr.gameObject);
 					bool found = false;
@@ -317,7 +317,7 @@ class tk2dSpriteEditor : Editor
 					if (found) {
 						// Reset all prefab states
 						var propMod = PrefabUtility.GetPropertyModifications(spr);
-						PrefabUtility.ResetToPrefabState(spr);
+						PrefabUtility.RevertObjectOverride(spr, InteractionMode.AutomatedAction);
 						PrefabUtility.SetPropertyModifications(spr, propMod);
 						
 						spr.ForceBuild();

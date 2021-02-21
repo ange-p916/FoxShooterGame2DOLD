@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealthController : MonoBehaviour
 {
+    public IsInTest IsInTest;
     public Image deathImg;
-    private Slider healthBar;
-    private Text healthText;
     tk2dSprite sprender;
+    public Canvas healthCanvas;
+    public Image healthImg;
     //private SpriteRenderer sprender;
     private PlayablePlayer player;
     public bool isInvincible = false;
@@ -22,20 +23,28 @@ public class PlayerHealthController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<tk2dSpriteAnimator>();
-        curHealth = GameScript.current.currentHealth;
-        maxHealth = GameScript.current.maxHealth;
-        print(GameScript.current.currentHealth + " " + GameScript.current.maxHealth);
+        //curHealth = GameScript.current.currentHealth;
+        //maxHealth = GameScript.current.maxHealth;
+        //print(GameScript.current.currentHealth + " " + GameScript.current.maxHealth);
         player = GetComponent<PlayablePlayer>();
         sprender = GetComponent<tk2dSprite>();
-        healthBar = GameObject.Find("HealthCanvas").transform.GetChild(0).GetComponent<Slider>();
-        healthText = GameObject.Find("HealthCanvas").transform.GetChild(1).GetComponent<Text>();
+
+        IsInTest = GetComponent<IsInTest>();
+
+        if(!IsInTest.Testing)
+        {
+            healthCanvas = GameObject.Find("HealthCanvas").GetComponent<Canvas>();
+            for (int i = 0; i < maxHealth; i++)
+            {
+                Instantiate(healthImg, healthCanvas.transform);
+            }
+        }
+
     }
 
     void Update()
     {
-        healthBar.value = curHealth;
-        healthBar.maxValue = maxHealth;
-        healthText.text = "Health: " + curHealth;
+
     }
 
 
@@ -61,7 +70,6 @@ public class PlayerHealthController : MonoBehaviour
             player.velocity.x = (enemyPos.position - this.transform.position).x > 0 ? Vector2.left.x * knockbackvel : Vector2.right.x * knockbackvel;
 
             curHealth -= damage;
-            healthBar.value = curHealth;
             isInvincible = true;
             StartCoroutine(TakeDamageAgain());
             StartCoroutine(BlinkColor());

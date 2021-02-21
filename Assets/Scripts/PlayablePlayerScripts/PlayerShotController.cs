@@ -68,14 +68,13 @@ public class PlayerShotController : MonoBehaviour
         else if(player.GetButton("Shoot") && controller.canShoot && controller.canShootStraight)
         {
             chargeTimer += Time.deltaTime;
-
             
             if(chargeTimer >= 0.15f)
             {
-                if (!MusicManager.Instance.chargeUpSound.isPlaying)
-                {
-                    MusicManager.Instance.chargeUpSound.PlayDelayed(0f);
-                }
+                //if (!MusicManager.Instance.chargeUpSound.isPlaying)
+                //{
+                //    MusicManager.Instance.chargeUpSound.PlayDelayed(0f);
+                //}
             }
             
             if(chargeTimer >= .5f)
@@ -85,7 +84,7 @@ public class PlayerShotController : MonoBehaviour
             else
             {
                 chargingUp = false;
-                MusicManager.Instance.chargeUpSound.Stop();
+                //MusicManager.Instance.chargeUpSound.Stop();
 
             }            
         }//releasing button

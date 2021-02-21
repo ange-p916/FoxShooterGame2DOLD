@@ -67,7 +67,8 @@ public class LoadMenuScript : MonoBehaviour {
 
     public void PlayGame()
     {
-
+        SaveLoad.NewSave();
+        SceneManager.LoadScene("LevelIntro");
     }
 
     public void SaveButton1(GameObject selectableObject)
