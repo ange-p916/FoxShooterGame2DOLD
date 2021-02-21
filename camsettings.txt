@@ -1,0 +1,10 @@
+vert off 0.08
+fall speed y smooth -18
+fall smooth vel y 0.1
+new look variable 0
+look up var 1 
+look down var 2.5
+look ahead dst x 0.4
+smooth time x 0.1
+vert smooth time 0.1
+focus area size 0.57 4

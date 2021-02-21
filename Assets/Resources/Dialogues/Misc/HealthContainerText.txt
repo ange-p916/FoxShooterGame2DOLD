@@ -1,0 +1,2 @@
+System:|Obtained a health container.
+System:|Gained 3 health points.

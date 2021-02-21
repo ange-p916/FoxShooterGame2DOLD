@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boss
+  - LifeCapsule
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Deadly
+  - Player
+  - Enemy
+  - Wall
+  - Reflector
+  - Bullet
+  - SplatterWall
+  - MedusaHead
+  - Slime
+  - Checkpoint
+  - Collectibles
+  - BgElements
+  - Door
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Backgrounds
+    uniqueID: 2936902201
+    locked: 0
+  - name: BehindTheGround
+    uniqueID: 3286738553
+    locked: 0
+  - name: Ground
+    uniqueID: 2635448115
+    locked: 0
+  - name: Background
+    uniqueID: 348991803
+    locked: 0
+  - name: Foreground
+    uniqueID: 1887704003
+    locked: 0
+  - name: Player
+    uniqueID: 2366878625
+    locked: 0
+  - name: DoorNcheckpoints
+    uniqueID: 2871392873
+    locked: 0
+  - name: Enemy
+    uniqueID: 2579460899
+    locked: 0
+  - name: Effects
+    uniqueID: 3643643385
+    locked: 0
