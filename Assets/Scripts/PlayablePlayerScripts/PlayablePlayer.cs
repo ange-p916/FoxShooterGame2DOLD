@@ -100,7 +100,7 @@ public class PlayablePlayer : MonoBehaviour
         if (controller.collisions.above || controller.collisions.below)
         {
             velocity.y = 0;
-            state = CharacterState.Idle;
+            //state = CharacterState.Idle;
             lastState = state;
         }
 
@@ -114,7 +114,7 @@ public class PlayablePlayer : MonoBehaviour
         DetermineCurrentState();
         //process state
         ProcessCurrentState();
-
+        print(state);
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime, input);
         //print(velocity.y);
@@ -344,6 +344,58 @@ public class PlayablePlayer : MonoBehaviour
             }
         }
     }
+    void ShootCompleteDelegate(tk2dSpriteAnimator sprite, tk2dSpriteAnimationClip clip)
+    {
+        
+            state = CharacterState.Idle;
+    }
+    private void WalkShootRight()
+    {
+        if (state != CharacterState.Falling &&
+            state != CharacterState.Jumping &&
+            state != CharacterState.Running &&
+            state != CharacterState.WallJump &&
+            state != CharacterState.WallSlide )
+        {
+            if ((InputManager.GetButtonDown("Shoot") &&
+                moveDirection == Direction.Right &&
+                anim.Sprite.FlipX == false) ||
+                (
+                InputManager.GetButtonDown("Shoot") &&
+                moveDirection == Direction.Stationary &&
+                anim.Sprite.FlipX == false))
+            {
+                ProjectilePool.Instance.ShootRight();
+                state = CharacterState.Shooting;
+            }
+        }
+    }
+
+    private void WalkShootLeft()
+    {
+        if (anim.Sprite.FlipX == false)
+            return;
+        if (state != CharacterState.Falling &&
+            state != CharacterState.Jumping &&
+            state != CharacterState.Running &&
+            state != CharacterState.WallJump &&
+            state != CharacterState.WallSlide)
+        {
+            if ((
+                InputManager.GetButtonDown("Shoot") &&
+                moveDirection == Direction.Left &&
+                anim.Sprite.FlipX == true) ||
+                (
+                InputManager.GetButtonDown("Shoot") &&
+                moveDirection == Direction.Stationary &&
+                anim.Sprite.FlipX == true))
+            {
+                state = CharacterState.Shooting;
+                
+                ProjectilePool.Instance.ShootLeft();
+            }
+        }
+    }
 
     private void JumpShootLeft()
     {
@@ -406,6 +458,16 @@ public class PlayablePlayer : MonoBehaviour
         //            break;
         //    }
         //}
+        
+        if(state != CharacterState.Shooting &&
+            state != CharacterState.WalkLeft)
+        {
+
+        }
+
+        WalkShootRight();
+        WalkShootLeft();
+
         JumpShootRight();
         JumpShootLeft();
         JumpShootUp();
@@ -481,14 +543,18 @@ public class PlayablePlayer : MonoBehaviour
                     anim.Play("idle");
                 break;
             case CharacterState.WalkLeft:
-                if (!anim.IsPlaying("walk") && lastState == CharacterState.Jumping == false)
-                {
-                    anim.Play("walk");
-                    anim.Sprite.FlipX = true;
-                }                    
+                //if (state != CharacterState.Shooting &&
+                //    !anim.IsPlaying("walk") && 
+                //    lastState == CharacterState.Jumping == false)
+                //{
+                //    anim.Play("walk");
+                //    anim.Sprite.FlipX = true;
+                //}                    
                 break;
             case CharacterState.WalkRight:
-                if (!anim.IsPlaying("walk") && lastState == CharacterState.Jumping == false)
+                if (
+                    !anim.IsPlaying("walk") &&
+                    lastState == CharacterState.Jumping == false)
                 {
                     anim.Play("walk");
                     anim.Sprite.FlipX = false;
@@ -508,7 +574,13 @@ public class PlayablePlayer : MonoBehaviour
                 //state = CharacterState.Idle;
                 break;
             case CharacterState.Shooting:
-                
+                if (!anim.IsPlaying("walk_shoot"))
+                {
+                    anim.Play("walk_shoot");
+                    anim.AnimationCompleted = ShootCompleteDelegate;
+                }
+                //if (!anim.IsPlaying("walk_shoot") && state != CharacterState.WalkRight)
+                //    anim.Play("walk_shoot");
                 break;
             case CharacterState.Falling:
                 break;
