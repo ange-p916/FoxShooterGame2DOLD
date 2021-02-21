@@ -1,0 +1,525 @@
+/target:library
+/nowarn:0169
+/out:Temp/Assembly-CSharp.dll
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/Managed/UnityEditor.dll"
+/reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+/reference:Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Assets/Rewired/Internal/Libraries/Runtime/Rewired_Core.dll
+/reference:Assets/Rewired/Internal/Libraries/Runtime/Rewired_Windows.dll
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll"
+/reference:"C:/Program Files/Unity/Hub/Editor/2019.4.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll"
+/define:UNITY_2019_4_8
+/define:UNITY_2019_4
+/define:UNITY_2019
+/define:UNITY_5_3_OR_NEWER
+/define:UNITY_5_4_OR_NEWER
+/define:UNITY_5_5_OR_NEWER
+/define:UNITY_5_6_OR_NEWER
+/define:UNITY_2017_1_OR_NEWER
+/define:UNITY_2017_2_OR_NEWER
+/define:UNITY_2017_3_OR_NEWER
+/define:UNITY_2017_4_OR_NEWER
+/define:UNITY_2018_1_OR_NEWER
+/define:UNITY_2018_2_OR_NEWER
+/define:UNITY_2018_3_OR_NEWER
+/define:UNITY_2018_4_OR_NEWER
+/define:UNITY_2019_1_OR_NEWER
+/define:UNITY_2019_2_OR_NEWER
+/define:UNITY_2019_3_OR_NEWER
+/define:UNITY_2019_4_OR_NEWER
+/define:PLATFORM_ARCH_64
+/define:UNITY_64
+/define:UNITY_INCLUDE_TESTS
+/define:ENABLE_AR
+/define:ENABLE_AUDIO
+/define:ENABLE_CACHING
+/define:ENABLE_CLOTH
+/define:ENABLE_EVENT_QUEUE
+/define:ENABLE_MICROPHONE
+/define:ENABLE_MULTIPLE_DISPLAYS
+/define:ENABLE_PHYSICS
+/define:ENABLE_TEXTURE_STREAMING
+/define:ENABLE_UNET
+/define:ENABLE_LZMA
+/define:ENABLE_UNITYEVENTS
+/define:ENABLE_VR
+/define:ENABLE_WEBCAM
+/define:ENABLE_UNITYWEBREQUEST
+/define:ENABLE_WWW
+/define:ENABLE_CLOUD_SERVICES
+/define:ENABLE_CLOUD_SERVICES_COLLAB
+/define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+/define:ENABLE_CLOUD_SERVICES_ADS
+/define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+/define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+/define:ENABLE_CLOUD_SERVICES_PURCHASING
+/define:ENABLE_CLOUD_SERVICES_ANALYTICS
+/define:ENABLE_CLOUD_SERVICES_UNET
+/define:ENABLE_CLOUD_SERVICES_BUILD
+/define:ENABLE_CLOUD_LICENSE
+/define:ENABLE_EDITOR_HUB_LICENSE
+/define:ENABLE_WEBSOCKET_CLIENT
+/define:ENABLE_DIRECTOR_AUDIO
+/define:ENABLE_DIRECTOR_TEXTURE
+/define:ENABLE_MANAGED_JOBS
+/define:ENABLE_MANAGED_TRANSFORM_JOBS
+/define:ENABLE_MANAGED_ANIMATION_JOBS
+/define:ENABLE_MANAGED_AUDIO_JOBS
+/define:INCLUDE_DYNAMIC_GI
+/define:ENABLE_MONO_BDWGC
+/define:ENABLE_SCRIPTING_GC_WBARRIERS
+/define:PLATFORM_SUPPORTS_MONO
+/define:RENDER_SOFTWARE_CURSOR
+/define:ENABLE_VIDEO
+/define:PLATFORM_STANDALONE
+/define:PLATFORM_STANDALONE_WIN
+/define:UNITY_STANDALONE_WIN
+/define:UNITY_STANDALONE
+/define:ENABLE_RUNTIME_GI
+/define:ENABLE_MOVIES
+/define:ENABLE_NETWORK
+/define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+/define:ENABLE_OUT_OF_PROCESS_CRASH_HANDLER
+/define:ENABLE_CLUSTER_SYNC
+/define:ENABLE_CLUSTERINPUT
+/define:GFXDEVICE_WAITFOREVENT_MESSAGEPUMP
+/define:ENABLE_WEBSOCKET_HOST
+/define:ENABLE_MONO
+/define:NET_4_6
+/define:ENABLE_PROFILER
+/define:DEBUG
+/define:TRACE
+/define:UNITY_ASSERTIONS
+/define:UNITY_EDITOR
+/define:UNITY_EDITOR_64
+/define:UNITY_EDITOR_WIN
+/define:ENABLE_UNITY_COLLECTIONS_CHECKS
+/define:ENABLE_BURST_AOT
+/define:UNITY_TEAM_LICENSE
+/define:ENABLE_VSTU
+/define:ENABLE_CUSTOM_RENDER_TEXTURE
+/define:ENABLE_DIRECTOR
+/define:ENABLE_LOCALIZATION
+/define:ENABLE_SPRITES
+/define:ENABLE_TERRAIN
+/define:ENABLE_TILEMAP
+/define:ENABLE_TIMELINE
+/define:ENABLE_LEGACY_INPUT_MANAGER
+/define:CSHARP_7_OR_LATER
+/define:CSHARP_7_3_OR_NEWER
+Assets\IsInTest.cs
+Assets\PlayerMotionStates.cs
+Assets\Rewired\Extras\ControlMapper\Examples\ControlMapperDemo\Scripts\ControlMapperDemoMessage.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ButtonInfo.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\CalibrationWindow.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\CanvasScalerExt.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\CanvasScalerFitter.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ControlMapper.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ControlMapper_Classes.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ControlMapper_Enums.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ControlMapper_InputGrid.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ControlMapper_WindowManager.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\CustomButton.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\CustomSlider.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\CustomToggle.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ICustomSelectable.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\InputBehaviorWindow.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\InputFieldInfo.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\InputRow.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\LanguageData.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\LanguageDataBase.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ScrollRectSelectableChild.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ScrollbarVisibilityHelper.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ThemeSettings.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ThemedElement.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\ToggleInfo.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UIControl.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UIControlSet.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UIElementInfo.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UIGroup.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UIImageHelper.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UISelectionUtility.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UISliderControl.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\UITools.cs
+Assets\Rewired\Extras\ControlMapper\Scripts\Window.cs
+Assets\Rewired\Integration\UnityUI\PlayerPointerEventData.cs
+Assets\Rewired\Integration\UnityUI\RewiredEventSystem.cs
+Assets\Rewired\Integration\UnityUI\RewiredPointerInputModule.cs
+Assets\Rewired\Integration\UnityUI\RewiredStandaloneInputModule.cs
+Assets\Rewired\Internal\Scripts\ControllerTemplates\ControllerTemplates.cs
+Assets\Rewired\Internal\Scripts\DataStorage\UserDataStore_PlayerPrefs.cs
+Assets\Rewired\Internal\Scripts\InputManager.cs
+Assets\Rewired\Internal\Scripts\Misc\ExternalTools.cs
+Assets\Rewired\Internal\Scripts\Platforms\Ouya\OuyaInputSource.cs
+Assets\Scripts\AnimationScripts\ChargingUpScript.cs
+Assets\Scripts\AnimationScripts\TutAnimController.cs
+Assets\Scripts\BirdScript.cs
+Assets\Scripts\CameraScripts\CamLerpEnablerScript.cs
+Assets\Scripts\CameraScripts\CamLerpNew.cs
+Assets\Scripts\CameraScripts\CamLerpScript.cs
+Assets\Scripts\CameraScripts\CinLerpNoDialogue.cs
+Assets\Scripts\CameraScripts\DoingParallax.cs
+Assets\Scripts\CameraScripts\MetroidCamera.cs
+Assets\Scripts\CameraScripts\SepRoomCam.cs
+Assets\Scripts\CheckpointStuff\Checkpoint.cs
+Assets\Scripts\CheckpointStuff\CheckpointManager.cs
+Assets\Scripts\CinematicScripts\BoatLerpScript.cs
+Assets\Scripts\CinematicScripts\PlayablePlayerEventThing.cs
+Assets\Scripts\DefeatLastBoss.cs
+Assets\Scripts\EnemyScripts\BaseStuff\EnemyBaseStuff.cs
+Assets\Scripts\EnemyScripts\BaseStuff\EnemyBehaviourTemplate.cs
+Assets\Scripts\EnemyScripts\BossHealthBarController.cs
+Assets\Scripts\EnemyScripts\BossScripts\BossLogProjectileScript.cs
+Assets\Scripts\EnemyScripts\BossScripts\FlyAndSlamBoss.cs
+Assets\Scripts\EnemyScripts\BossScripts\ThrowLogBoss.cs
+Assets\Scripts\EnemyScripts\EnemyHealthBarController.cs
+Assets\Scripts\EnemyScripts\EnemyProjScripts.cs
+Assets\Scripts\EnemyScripts\EnemyProjectilePool.cs
+Assets\Scripts\EnemyScripts\EnemyReqComp.cs
+Assets\Scripts\EnemyScripts\FlyingEnemies\FlyingBatBehaviour.cs
+Assets\Scripts\EnemyScripts\FlyingEnemies\FlyingBatEnemy.cs
+Assets\Scripts\EnemyScripts\FlyingEnemies\FlyingBomberEnemy.cs
+Assets\Scripts\EnemyScripts\FlyingEnemies\MedusaHead.cs
+Assets\Scripts\EnemyScripts\FlyingEnemies\MedusaHeadNestSpawner.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericChargeScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericExploderEnemyScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericFlyingScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericJumpingScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericObjectPool.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericPatrollingScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericShootingScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericStateController.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericTeleporterScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\GenericTimerScript.cs
+Assets\Scripts\EnemyScripts\GenericScripts\SlugEnemyBehaviour.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\ExploderEnemy.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\JumpingEnemy.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\ReflectorAndChargeEnemy.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\SlimeSlowDown.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\SlugEnemy.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\SpinnerEnemy.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\StationaryShooter.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\TeleporterEnemy.cs
+Assets\Scripts\EnemyScripts\GroundEnemies\ZombieSpewerEnemy.cs
+Assets\Scripts\EnemyScripts\LineRendererScript.cs
+Assets\Scripts\EnemyScripts\MakeEnemiesRespawn.cs
+Assets\Scripts\EnvironmentStuff\ActivateHologramManager.cs
+Assets\Scripts\EnvironmentStuff\DisableBricks.cs
+Assets\Scripts\EnvironmentStuff\DoorScript.cs
+Assets\Scripts\EnvironmentStuff\ExplosionTimer.cs
+Assets\Scripts\EnvironmentStuff\LifeCapsule.cs
+Assets\Scripts\EnvironmentStuff\PlayerDefeated.cs
+Assets\Scripts\EnvironmentStuff\TeleportPoint.cs
+Assets\Scripts\EnvironmentStuff\UnlockableManager.cs
+Assets\Scripts\Learning\NGram.cs
+Assets\Scripts\Learning\PredictTester.cs
+Assets\Scripts\MUSIC\MusicManager.cs
+Assets\Scripts\MUSIC\MusicSfxController.cs
+Assets\Scripts\MenuScripts\AssociatedSaveDataScript.cs
+Assets\Scripts\MenuScripts\CanvasManager.cs
+Assets\Scripts\MenuScripts\CreditsButtonScript.cs
+Assets\Scripts\MenuScripts\DeathScreenManager.cs
+Assets\Scripts\MenuScripts\GameStateManager.cs
+Assets\Scripts\MenuScripts\KeyDoneScript.cs
+Assets\Scripts\MenuScripts\LoadMenuScript.cs
+Assets\Scripts\MenuScripts\MainMenuScript.cs
+Assets\Scripts\MenuScripts\PauseScreenManager.cs
+Assets\Scripts\PlayablePlayerScripts\ChargedUpProj.cs
+Assets\Scripts\PlayablePlayerScripts\Controller2D.cs
+Assets\Scripts\PlayablePlayerScripts\CountdownScript.cs
+Assets\Scripts\PlayablePlayerScripts\HealthBooster.cs
+Assets\Scripts\PlayablePlayerScripts\HealthComponent.cs
+Assets\Scripts\PlayablePlayerScripts\PlayablePlayer.cs
+Assets\Scripts\PlayablePlayerScripts\PlayerDisableUtility.cs
+Assets\Scripts\PlayablePlayerScripts\PlayerHealthController.cs
+Assets\Scripts\PlayablePlayerScripts\PlayerProjectile.cs
+Assets\Scripts\PlayablePlayerScripts\PlayerShooting.cs
+Assets\Scripts\PlayablePlayerScripts\PlayerShotController.cs
+Assets\Scripts\PlayablePlayerScripts\ProjectilePool.cs
+Assets\Scripts\PoolsnStuff\CreateExtraLivesScript.cs
+Assets\Scripts\PoolsnStuff\ExplosionPool.cs
+Assets\Scripts\PredictProjectile.cs
+Assets\Scripts\SaveLoadStuff\GameScript.cs
+Assets\Scripts\SaveLoadStuff\LevelLoader.cs
+Assets\Scripts\SaveLoadStuff\SaveLoad.cs
+Assets\Scripts\SaveLoadStuff\SaveLoadManager.cs
+Assets\Scripts\ShaderScripts\GlitchEffect.cs
+Assets\Scripts\ShaderScripts\ReplacementShader.cs
+Assets\Scripts\ShowJoystickSprites\ControllerGlyphs.cs
+Assets\Scripts\ShowJoystickSprites\ControllerStuff.cs
+Assets\Scripts\ShowJoystickSprites\GlyphManager.cs
+Assets\Scripts\ShowJoystickSprites\GlyphStuff.cs
+Assets\Scripts\ShowJoystickSprites\ShowControllerGlyphs.cs
+Assets\Scripts\ShowJoystickSprites\ShowTheInput.cs
+Assets\Scripts\ShowJoystickSprites\ShowTheInputManager.cs
+Assets\Scripts\SplatterScript.cs
+Assets\Scripts\TestEnemyScript.cs
+Assets\Scripts\Typewriter\DialogueScript.cs
+Assets\Scripts\Typewriter\TypeWriter.cs
+Assets\Scripts\Typewriter\TypewriterManager.cs
+Assets\ShaderStuff\NewShaderStuff\MirrorReflection.cs
+Assets\ShaderStuff\OldShaderStuff\PostEffectScript.cs
+Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs
+Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs
+Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs
+Assets\TK2DROOT\tk2d\Code\Fonts\tk2dFont.cs
+Assets\TK2DROOT\tk2d\Code\Fonts\tk2dFontData.cs
+Assets\TK2DROOT\tk2d\Code\Fonts\tk2dTextGeomGen.cs
+Assets\TK2DROOT\tk2d\Code\Fonts\tk2dTextMesh.cs
+Assets\TK2DROOT\tk2d\Code\Gui\tk2dButton.cs
+Assets\TK2DROOT\tk2d\Code\Runtime\tk2dResource.cs
+Assets\TK2DROOT\tk2d\Code\Runtime\tk2dSystem.cs
+Assets\TK2DROOT\tk2d\Code\Runtime\tk2dUpdateManager.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dAnimatedSprite.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dBaseSprite.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dClippedSprite.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dEditorSpriteDataUnloader.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dPixelPerfectHelper.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dRuntimeSpriteCollection.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSlicedSprite.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSprite.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteAnimation.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteAnimator.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteAttachPoint.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteCollection.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteCollectionData.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteCollectionInterfaces.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteCollectionSize.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteFromTexture.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dSpriteGeomGen.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dStaticSpriteBatcher.cs
+Assets\TK2DROOT\tk2d\Code\Sprites\tk2dTiledSprite.cs
+Assets\TK2DROOT\tk2d\Code\tk2dUtil.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMap.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMapBuilderUtil.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMapChunks.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMapColliderBuilder.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMapColliderBuilder2D.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMapData.cs
+Assets\TK2DROOT\tk2dTileMap\Code\tk2dTileMapMeshBuilder.cs
+Assets\TK2DROOT\tk2dTileMap_demo\Demo1\Scripts\tk2dTileMapDemoCoin.cs
+Assets\TK2DROOT\tk2dTileMap_demo\Demo1\Scripts\tk2dTileMapDemoFollowCam.cs
+Assets\TK2DROOT\tk2dTileMap_demo\Demo1\Scripts\tk2dTileMapDemoPlayer.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIBaseItemControl.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIDragItem.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIDropDownItem.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIDropDownMenu.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIHoverItem.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIMultiStateToggleButton.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIProgressBar.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIScrollableArea.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIScrollbar.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUISoundItem.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUITextInput.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIToggleButton.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIToggleButtonGroup.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIToggleControl.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUITweenItem.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIUpDownButton.cs
+Assets\TK2DROOT\tk2dUI\Code\Controls\tk2dUIUpDownHoverButton.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUIAudioManager.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUICamera.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUIItem.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUILayout.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUILayoutContainer.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUILayoutContainerSizer.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUIManager.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUIMask.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUISpriteAnimator.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUITime.cs
+Assets\TK2DROOT\tk2dUI\Code\Core\tk2dUITouch.cs
+Assets\TK2DROOT\tk2dUI_demo\tk2dUIBaseDemoController.cs
+Assets\TK2DROOT\tk2dUI_demo\tk2dUIDemo2Controller.cs
+Assets\TK2DROOT\tk2dUI_demo\tk2dUIDemo3Controller.cs
+Assets\TK2DROOT\tk2dUI_demo\tk2dUIDemo5Controller.cs
+Assets\TK2DROOT\tk2dUI_demo\tk2dUIDemo6Controller.cs
+Assets\TK2DROOT\tk2dUI_demo\tk2dUIDemoController.cs
+Assets\TK2DROOT\tk2d_demo\tk2dDemoAnimController.cs
+Assets\TK2DROOT\tk2d_demo\tk2dDemoButtonController.cs
+Assets\TK2DROOT\tk2d_demo\tk2dDemoCameraController.cs
+Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs
+Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs
